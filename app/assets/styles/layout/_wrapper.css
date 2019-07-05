@@ -1,8 +1,12 @@
+/* base horizontal padding 
+   centering */
 .container {
     max-width: 1152px;
     margin: 0 auto;
+    padding: 0 32px;
 }
 
+/* (temp) main section */
 .site-content {
     background-color: $primaryCol-lighter;
     min-height: 500px;

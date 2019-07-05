@@ -1,5 +1,7 @@
 .primary-nav {
 
+    display: none;
+
     &__list {
         display: flex;
         justify-content: space-between;
@@ -7,6 +9,49 @@
     }
 
     &__list li {
+    }
+
+}
+
+.overlay-nav {
+    width: 80%;
+    height: 100%;
+    /* background-color: yellow; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    position: absolute;
+    z-index: 2;
+
+    &__icon, &__icon::after, &__icon::before {
+        display: inline-block;
+        width: 28px;
+        height: 2px;
+        background-color: #333;
+    }
+
+    &__icon {
+        position: relative;
+        margin-top: 8px;
+    }
+
+    &__icon::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+    }
+
+    &__icon::before {
+        content: "";
+        position: absolute;
+        top: -8px;
     }
 
 }
