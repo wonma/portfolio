@@ -1,0 +1,14 @@
+.site-header {
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px; 
+    }
+
+    &__logo-text {
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: -1.04px;
+    }
+}

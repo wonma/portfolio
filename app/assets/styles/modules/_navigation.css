@@ -1,0 +1,12 @@
+.primary-nav {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 346px;
+    }
+
+    &__list li {
+    }
+
+}
