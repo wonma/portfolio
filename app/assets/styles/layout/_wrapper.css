@@ -11,3 +11,8 @@
     background-color: $primaryCol-lighter;
     min-height: 500px;
 }
+
+.page-section {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}

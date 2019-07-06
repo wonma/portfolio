@@ -1,5 +1,4 @@
 .primary-nav {
-
     display: none;
 
     &__list {
@@ -14,44 +13,79 @@
 }
 
 .overlay-nav {
-    width: 80%;
+    /* opacity: 0; */
+
+    width: 100%;
     height: 100%;
-    /* background-color: yellow; */
+    background-color: rgba(46, 58, 62, 0.92);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
+    transform: translate3d(-100%, 0, 0);
+
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+
+    &--is-open {
+        /* opacity: 1; */
+        transform: translate3d(0, 0, 0);
+    }
 }
 
+
 .hamburger {
-    width: 30px;
-    height: 30px;
-    border: 1px solid red;
+    width: 40px;
+    height: 40px;
     position: absolute;
     z-index: 2;
+    /* border: 1px solid red; */
+    &:hover {
+        cursor: pointer;
+    }
 
-    &__icon, &__icon::after, &__icon::before {
-        display: inline-block;
+    &__icon, &::after, &::before {
         width: 28px;
         height: 2px;
         background-color: #333;
+        transition: all .5s ease-out;
     }
 
     &__icon {
-        position: relative;
-        margin-top: 8px;
-    }
-
-    &__icon::after {
-        content: "";
         position: absolute;
         top: 8px;
     }
 
-    &__icon::before {
+    &::before {
         content: "";
         position: absolute;
-        top: -8px;
+        top: 0;
+        left: 0;
+        transform-origin: 0 0;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 16px;
+        transform-origin: 0 0;
+        /* background-color: pink; */
+
+    }
+
+    &--is-close-icon {
+        &::before {
+			transform: rotate(45deg) scaleX(1.2) translateX(0px) translateY(-2px);
+            background-color: #fff;
+        }
+
+		& .hamburger__icon {
+			/* opacity:0; */
+			transform: scaleX(0);
+		}
+
+		&::after {
+			transform: rotate(-45deg) scaleX(1.2) translateX(-4px) translateY(4px);
+            background-color: #fff;
+        }
     }
 
 }

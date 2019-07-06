@@ -1,0 +1,35 @@
+.row {
+    @mixin clearfix;
+}
+
+.gutters {
+    margin-right: -65px;
+    & > div { padding-right: 65px; }  /* here, the divs are columns inside of the row */
+
+    &--small {
+        margin-right: -45px;
+        & > div { padding-right: 45px; }
+    }
+
+    &--large {
+        margin-right: -100px;
+        & > div { padding-right: 100px; }
+    }
+}
+
+.col {
+    &--4 {
+        float:left;
+        width:33.33%;
+    }
+
+    &--6 {
+        float:left;
+        width:50%;
+    }
+
+    &--8 {
+        float:left;
+        width:66.66%;
+    }
+}
