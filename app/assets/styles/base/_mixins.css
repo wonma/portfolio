@@ -8,17 +8,20 @@
 
 }
 
+@define-mixin absCenter{
 
-/*****  MEDIA QUERY  *****/
-
-@define-mixin atSmaller{
-
-	@media (min-width:360px){
-		@mixin-content;
+    & {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 }
 
+
+
+/*****  MEDIA QUERY  *****/
 
 @define-mixin atSmall{
 

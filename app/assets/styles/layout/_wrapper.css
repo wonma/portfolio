@@ -7,10 +7,7 @@
 }
 
 /* (temp) main section */
-.site-content {
-    background-color: $primaryCol-lighter;
-    min-height: 500px;
-}
+
 
 .page-section {
     margin-top: 45px;

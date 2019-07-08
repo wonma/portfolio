@@ -9,8 +9,9 @@ class HeroSlider {
     initSlider() {
         this.els.slick({
             autoplay: true,
+            autoplaySpeed: 5000,
             infinite: true,
-            speed: 200,
+            speed: 1200,
             fade: true,
             cssEase: 'linear',
             arrows: false,

@@ -13,5 +13,7 @@
 @import 'modules/_btn';
 @import 'modules/_navigation';
 @import 'modules/_site-header';
+@import 'modules/_hero';
+
 
 @import 'base/_utilities';
