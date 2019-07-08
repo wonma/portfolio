@@ -34,6 +34,8 @@
     "webpack-cli": "^3.3.5"
   },
   "dependencies": {
-    "postcss-hexrgba": "^1.0.1"
+    "jquery": "^3.4.1",
+    "postcss-hexrgba": "^1.0.1",
+    "slick-carousel": "^1.8.1"
   }
 }
