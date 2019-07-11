@@ -14,6 +14,7 @@
 @import 'modules/_navigation';
 @import 'modules/_site-header';
 @import 'modules/_hero';
+@import 'modules/_section';
 
 
 @import 'base/_utilities';

@@ -310,14 +310,15 @@ h2 {
         left: 0;
         right: 0;
         bottom: 0;
-        background: -webkit-gradient(linear, left top, right top, from(rgba(80, 0, 187, 0.85)), to(rgba(118, 48, 255, 0.88)));
-        background: linear-gradient(to right, rgba(80, 0, 187, 0.85) 0%, rgba(118, 48, 255, 0.88) 100%)
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(125, 53, 214, 0.90)), to(rgba(70, 23, 171, 0.90)));
+        background: linear-gradient(to top, rgba(125, 53, 214, 0.90) 0%, rgba(70, 23, 171, 0.90) 100%)
     }
 .hero__heading {
             position: absolute;
             z-index: 1;
             width: 100%;
             margin-top: 200px;
+
     }
 .hero__heading--intro {
             font-size: 16px;
@@ -329,12 +330,15 @@ h2 {
         }
 .hero__heading--concept {
             margin-top: 20px;
+            font-size: 28pt;
+            letter-spacing: 5pt;
+            font-weight: 600;
         }
 .hero__heading--keywords {
             margin-top: 20px;
             font-size: 16px;
             letter-spacing: 1.4px;
-            font-weight: 500;
+            font-weight: 400;
         }
 .hero-slider__img {
             width: 100%;
@@ -366,6 +370,39 @@ h2 {
 .hero-slider__img--03 {
                 background-image: url('../../assets/images/hero_03.jpg');
             }
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.section__header {
+        padding: 0 32px;
+    }
+.section__side {
+        padding: 0 0 0 32px;
+    }
+.section__eyebrow {
+       letter-spacing: 1.4px; 
+       font-size: 14px;
+       font-weight: 500;
+       color: #9028EF;
+    }
+.section__title {
+        font-size: 28px;
+        font-weight: 300;
+        margin-top: 30px;
+        -webkit-transform: translateX(-2px);
+                transform: translateX(-2px); /* aligned to the left */
+    }
+.section__paragraph {
+        margin-top: 16px;
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: .5px; 
+        color: #303030;
+    }
+.section__inner-container {
+        margin-top: 24px;
+    }
 /* .mh-16 {
     padding-left: 16px;
     padding-right: 16px;

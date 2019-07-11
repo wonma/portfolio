@@ -1,0 +1,38 @@
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__header {
+        padding: 0 32px;
+    }
+
+    &__side {
+        padding: 0 0 0 32px;
+    }
+
+    &__eyebrow {
+       letter-spacing: 1.4px; 
+       font-size: 14px;
+       font-weight: 500;
+       color: #9028EF;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 300;
+        margin-top: 30px;
+        transform: translateX(-2px); /* aligned to the left */
+    }
+
+    &__paragraph {
+        margin-top: 16px;
+        font-weight: 400;
+        line-height: 1.8;
+        letter-spacing: .5px; 
+        color: #303030;
+    }
+
+    &__inner-container {
+        margin-top: 24px;
+    }
+}
