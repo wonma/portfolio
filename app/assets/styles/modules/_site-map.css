@@ -1,7 +1,7 @@
 .site-map {
     display: flex;
     flex-direction: column;    /* border: 1px solid yellow; */
-    width: 500px;
+    /* width: 00px; */
 
     @mixin atMedium {
         flex-direction: row;

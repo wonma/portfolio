@@ -3,6 +3,7 @@
     color: #fff;
     letter-spacing: .8px;
     position: relative;
+    overflow: hidden;
 
     &__content {
         padding: 70px 0;
@@ -16,44 +17,46 @@
         /* text-transform: uppercase; */
     }
 
-    &__resume {
-        display: inline-block;
-        position: relative;
-        background-color: #fff;
-        margin: 40px 0;
-        top: -50px;
-        padding: 20px 70px;
-        /*  centering  */
-        right: 0;
-        /* transform: translateX(-50%); */
-        border-radius: 50px;
+    &__inner-container {
+        display: flex;
+        flex-direction: column;
 
         @mixin atMedium {
-            position: absolute;
-            padding: 30px 100px;
-            top: -50px;
-            right: 0;
+            flex-direction: row;
         }
     }
 
-    &__inner-container {
-        display: flex;
-    }
-
     &__site-map {
-        flex: 2 auto;
+        flex: 1 auto;
+        order: 1;
+        margin-right: 190px;
+
+        @mixin atMedium {
+            order: 0;
+        }
     }
 
     &__contact {
         flex: 1 auto;
+        margin-bottom: 40px;
         & > * {
             margin-bottom: 10px;
         }
+
+        &-email {
+            font-size: 18px;
+        }
+
+        &-status {
+            opacity: .6;
+        }
+/* 
+        &-social {
+            display: flex;
+        } */
     }
 
-    &__social {
-        display: flex;
-    }
+
 
     &__copyright {
         margin-top: 30px;

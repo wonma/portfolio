@@ -6,13 +6,48 @@
 
     &--underline {
         background-color: #412496;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
         border-radius: 60px;
         color: #fff;
         font-weight: 300;
         font-size: 15px;
         letter-spacing: 1px;
+    }
+
+    &--resume {
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        transform: rotate(90deg);
+        background-color: #fff;
+        letter-spacing: .8px;
+        /* margin: 30px 0; */
+
+        &--top-right {
+            top: 90px;
+            padding: 12px 65px;
+            right: -100px;
+
+            @mixin atMedium {
+                top: 0px;
+                right: 0;
+            }
+        }
+
+        &--bottom-right{
+            bottom: 90px;
+            padding: 12px 65px;
+            right: -100px;
+
+            @mixin atMedium {
+                bottom: 0px;
+                /* left: 0; */
+                right: 0;
+            }
+        }
+
+        @mixin atMedium {
+            transform: rotate(0deg);
+            padding: 30px 100px;
+        }    
     }
 }
