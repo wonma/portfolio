@@ -1,19 +1,18 @@
 .btn {
-    display: block;
+    display: inline-block;
     margin: 30px 0;
+    /* height: 62px; */
+    padding: 22px 45px;
 
     &--underline {
         background-color: #412496;
-        width: 200px;
-        height: 62px;
-        
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
-        border-radius: 36px;
+        align-items: center; */
+        border-radius: 60px;
         color: #fff;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 15px;
         letter-spacing: 1px;
     }
 }

@@ -2,12 +2,43 @@
     padding-top: 80px;
     padding-bottom: 80px;
 
+    &__design {
+        background-color: #FBF9FF;
+    }
+
+    &__banner {
+        background-color: $primaryCol;
+        text-align: center;
+        color: #fff;
+        font-weight: 300;
+        padding-left: 70px;
+        padding-right: 70px; 
+        &-eyebrow {
+            color: rgba(#ffffff, 0.7);
+        }
+        &-copy {
+            margin-top: 15px;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+    }
+
     &__container { /* contain A-level */
         border: 1px solid #999999;
         max-width: 1024px;
         margin: 0 auto;
+        
         @mixin atMedium {
-            padding-right: 200px;
+            padding-right: 300px;
+        }
+    }
+
+    &__illust {
+        max-width: 700px;
+        margin: 30px 0;
+        @mixin atMedium {
+            width: 600px;
         }
     }
 
@@ -15,55 +46,74 @@
 
     &__header {  /* wrapper A-level */
         padding: 0 32px;
-        max-width: 500px;
+        max-width: 700px;
         border: 1px solid blue;
     }
 
     &__side {   /* wrapper A-level */
-        padding: 0 0 0 32px;
         border: 1px solid orange;
-        /* width: 50vw; */
+
+        &--left-padding {
+            padding: 0 32px;
+        }
+
+        &--right-padding {
+            padding: 0 32px;
+        }
+
         &-container {
             margin-top: 24px;
-            /* display: flex; */
+
             & > img {
                 width: 100%;
                 height: 300px;
                 object-fit: cover;
             }
+
             & > .img1 {
                 margin-bottom: 20px;
             }
+
             @mixin atMedium {
-            & > .img1 {
-                margin-right: 3%;
-                margin-bottom: 0;
-            }
+
+                & > .img1 {
+                    margin-right: 3%;
+                    margin-bottom: 0;
+                }
+
                 & > img {
                     width: 45%;
                 }
+
             }
         }
-
-
     }
 
     &__cta {   /* wrapper A-level */
         padding: 0 32px;
         border: 1px solid red;
-
+        text-align: center;
     }
+
+    /************** Section Specific Elements *************/
 
     &__eyebrow {
        letter-spacing: 1.4px; 
        font-size: 14px;
        font-weight: 500;
-       color: #9028EF;
+       color: $primaryCol-point;
+
+       &--bw1 { /* an inner part eyebrow of a certain section */
+            color: #505050;
+            padding-top: 50px;
+            text-align: center;
+       }
     }
 
-    &__title {
+    &__heading {
         font-size: 28px;
         font-weight: 300;
+        line-height: 1.4;
         margin-top: 30px;
         transform: translateX(-2px); /* aligned to the left */
     }

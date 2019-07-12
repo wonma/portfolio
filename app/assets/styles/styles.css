@@ -15,5 +15,8 @@
 @import 'modules/_site-header';
 @import 'modules/_hero';
 @import 'modules/_section';
+@import 'modules/_illust';
+@import 'modules/_card';
+
 
 @import 'base/_utilities';

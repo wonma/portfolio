@@ -1,0 +1,133 @@
+.illust {
+    &__container {
+        border: 1px solid red;
+        display: flex;
+        position: relative;
+        justify-content: center;
+
+    }
+
+    &__circle {
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid grey;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        
+        @mixin atMedium {
+            font-size: 16px;
+            width: 12rem;
+            height: 12rem;   
+        }
+
+        &--big {  /* Front-end circle */
+            width: 11rem;
+            height: 11rem;   
+            background-color: #fff;
+            @mixin atMedium {
+                width: 13.5rem;
+                height: 13.5rem;
+            }
+        }
+
+        &--medium {  /* Back-end circle */
+            width: 9.5rem;
+            height: 9.5rem;    
+            background-color: #fff;
+            transform: translate(-10px, 12px);
+            z-index: -1;
+            @mixin atMedium {
+                width: 11.5rem;
+                height: 11.5rem;
+            }
+        }
+
+        &--left {
+            opacity: 0;
+            .is-in-view & {
+                animation-name: fadeInThenMoveRight;
+                animation-duration: 1.5s;
+                animation-timing-function: ease;
+                animation-delay: .5s;
+                animation-direction: normal;
+                animation-fill-mode: forwards;
+                /* No setting for animation-iteration-count, animation-play-state  */
+            }
+        }
+
+        &--center {
+            border-color: $primaryCol-point;
+            color: $primaryCol-point;
+            opacity: 0;
+            transition: opacity .5s ease-out;
+
+            .is-in-view & {
+                opacity: 1;
+            }
+        }
+
+        &--right {
+            opacity: 0;
+            .is-in-view & {
+                animation-name: fadeInThenMoveLeft;
+                animation-duration: 1.5s;
+                animation-timing-function: ease;
+                animation-delay: .5s;
+                animation-direction: normal;
+                animation-fill-mode: forwards;
+                /* No setting for animation-iteration-count, animation-play-state  */
+            }
+        }
+
+        &-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            position: absolute;
+            border: 1px solid grey;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            background-color: #ffffff;
+        
+            /* Front-end Items */
+            &--title1 {
+                transform: translateY(-50px);
+                width: 4rem;
+                border: none;
+            }
+
+            &--item2 {  /* item 'CSS' */
+                transform: translate(-30px, 32px);
+            }
+
+            &--item3 {  /* item 'JS' */
+                transform: translate(30px, 32px);
+            }
+
+            /* Back-end Items */
+            &--title2 {
+                transform: translateY(-30px);
+                width: 4rem;
+                border: none;
+            }
+
+            &--item4 {  /* item 'MongoDB' */
+                transform: translate(28px, 15px);
+                padding: 10px;
+            }
+
+            &--item5 {  /* item 'ExpressJS' */ 
+                transform: translate(-28px, 15px);
+                padding: 20px;
+            }
+        }
+    }
+}
