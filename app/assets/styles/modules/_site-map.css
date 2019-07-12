@@ -1,0 +1,28 @@
+.site-map {
+    display: flex;
+    flex-direction: column;    /* border: 1px solid yellow; */
+    width: 500px;
+
+    @mixin atMedium {
+        flex-direction: row;
+    }
+
+    &__list { /* <ul> */
+        flex: 1; 
+        margin-bottom: 20px;
+        &-title { 
+            color: $secondaryCol-lighter;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        &-item { /* <li> */
+            margin-bottom: 10px;
+        }
+
+        &-link { /* <a> */
+            color: rgba(#fff, .9);
+        }
+
+    }
+}

@@ -4,6 +4,10 @@
     max-width: 1152px;
     margin: 0 auto;
     padding: 0 32px;
+
+    @mixin atMedium {
+        max-width: 1024px;
+    }
 }
 
 /* (temp) main section */

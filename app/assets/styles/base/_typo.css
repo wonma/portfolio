@@ -1,5 +1,13 @@
+/* Google font 'Lato' weight
+
+    light   300
+    regular 400
+    bold    700
+    black   900
+
+*/
+
 h1 {
     font-size: 54px;
-    font-weight: 500;
-
+    font-weight: 700;
 }
