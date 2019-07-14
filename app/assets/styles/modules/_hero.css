@@ -5,6 +5,10 @@
     height: 646px;
     overflow: hidden;
 
+    &--subpage {
+        height: 446px;
+    }
+
     &::after {
         content: '';
         display:  block;
@@ -50,6 +54,18 @@
             margin-top: 20px;
             font-size: 16px;
             letter-spacing: 1.4px;
+            font-weight: 400;
+        }
+
+        &--main {
+            margin-top: 20px;
+            font-size: 30pt;
+        }
+
+        &--sub {
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 18pt;
             font-weight: 400;
         }
 

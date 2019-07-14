@@ -13,9 +13,11 @@
         font-weight: 300;
         padding-left: 70px;
         padding-right: 70px; 
+
         &-eyebrow {
             color: rgba(#ffffff, 0.7);
         }
+
         &-copy {
             margin-top: 15px;
             line-height: 1.6;

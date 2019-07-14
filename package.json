@@ -36,6 +36,7 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "postcss-hexrgba": "^1.0.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "waypoints": "^4.0.1"
   }
 }
