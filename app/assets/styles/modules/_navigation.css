@@ -91,18 +91,23 @@
 }
 
 .secondary-nav-container {
-    position: sticky;
-    top:0;
+    /* position: sticky; */
 }
 
 .secondary-nav { /* nav */
+    
     position: sticky;
     background-color: #fff;
     z-index: 100;
-    transition: all 1s ease-out;
-    top: 0px;
-    /* top: 120px; */
-    padding: 32px;
+    transition: all .35s ease-out;
+    /* top: 102px; */
+    top:0px;
+    padding-top: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-bottom: 31px;
+
+    /* margin-left: 80px; */
     letter-spacing: 1px;
 
     &__list { /* ul */
@@ -125,7 +130,7 @@
             &::after {
                 content: "";                
                 position: absolute;
-                bottom: -8px;
+                bottom: -12px;
                 left: 0;
                 width: 99%;
                 border-bottom: 2px solid rgba(#9028EF, .7);

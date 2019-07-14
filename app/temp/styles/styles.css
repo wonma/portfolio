@@ -277,6 +277,7 @@ h1 {
 	}
 .site-content {
     position: relative;
+    /* top:120px; */
 }
 /* (temp) main section */
 .page-section {
@@ -427,20 +428,25 @@ h1 {
             background-color: #fff;
         }
 .secondary-nav-container {
-    position: -webkit-sticky;
-    position: sticky;
-    top:0;
+    /* position: sticky; */
 }
 .secondary-nav { /* nav */
+    
     position: -webkit-sticky;
+    
     position: sticky;
     background-color: #fff;
     z-index: 100;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
-    top: 0px;
-    /* top: 120px; */
-    padding: 32px;
+    -webkit-transition: all .35s ease-out;
+    transition: all .35s ease-out;
+    /* top: 102px; */
+    top:0px;
+    padding-top: 31px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-bottom: 31px;
+
+    /* margin-left: 80px; */
     letter-spacing: 1px;
 
 }
@@ -467,25 +473,43 @@ h1 {
 .secondary-nav__link.is-current-link::after {
                 content: "";                
                 position: absolute;
-                bottom: -8px;
+                bottom: -12px;
                 left: 0;
                 width: 99%;
                 border-bottom: 2px solid rgba(144,40,239, .7);
             }
+.site-header {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    -webkit-transition: all .35s ease-out;
+    transition: all .35s ease-out;
+}
 .site-header__content {
         display: -webkit-box;
         display: flex;
-        -webkit-box-pack: justify;
-                justify-content: space-between;
+        -webkit-box-pack: start;
+                justify-content: flex-start;
         -webkit-box-align: center;
                 align-items: center;
         height: 120px; 
     }
 .site-header__logo-text {
         font-size: 32px;
+        margin-left: 60px;
+        margin-top: 10px;
         font-weight: 900;
         letter-spacing: -1.04px;
     }
+.site-header--dynamic {
+    position: fixed;
+    top: -120px;
+    z-index: 110;
+    border: 1px solid orchid;
+}
+.hide-dynamic-header {
+    top: -120px;
+}
 .site-footer {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(125, 53, 214, 0.90)), to(rgba(70, 23, 171, 0.90)));
     background: linear-gradient(to top, rgba(125, 53, 214, 0.90) 0%, rgba(70, 23, 171, 0.90) 100%);
@@ -617,7 +641,6 @@ h1 {
             font-size: 30pt;
         }
 .hero__heading--sub {
-            font-style: italic;
             margin-top: 20px;
             font-size: 18pt;
             font-weight: 400;

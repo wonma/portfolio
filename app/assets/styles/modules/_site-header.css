@@ -1,14 +1,32 @@
 .site-header {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    transition: all .35s ease-out;
+
     &__content {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         height: 120px; 
     }
 
     &__logo-text {
         font-size: 32px;
+        margin-left: 60px;
+        margin-top: 10px;
         font-weight: 900;
         letter-spacing: -1.04px;
     }
+}
+
+.site-header--dynamic {
+    position: fixed;
+    top: -120px;
+    z-index: 110;
+    border: 1px solid orchid;
+}
+
+.hide-dynamic-header {
+    top: -120px;
 }
