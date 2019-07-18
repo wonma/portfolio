@@ -9,6 +9,8 @@
         height: 446px;
     }
 
+
+
     &::after {
         content: '';
         display:  block;
@@ -21,6 +23,10 @@
         background: linear-gradient(to right, rgba(20, 0, 218, 0.83) 0%, rgba(116, 20, 204, 0.79) 100%);
         background: -webkit-linear-gradient(to right, rgba(20, 0, 218, 0.83) 0%, rgba(116, 20, 204, 0.79) 100%);
 
+        .page-myself & {
+            background: linear-gradient(to bottom, rgba(#4826B9, 1) 0%, rgba(#B92F8B, 1) 100%);
+            background: -webkit-linear-gradient(to bottom, rgba(#4826B9, 1) 0%, rgba(#B92F8B, 1) 100%);
+        }
     }
 
     &__heading {

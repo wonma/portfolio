@@ -428,7 +428,8 @@ h1 {
             background-color: #fff;
         }
 .secondary-nav-container {
-    /* position: sticky; */
+    max-width: 1024px;
+    margin:0 auto;
 }
 .secondary-nav { /* nav */
     
@@ -441,10 +442,7 @@ h1 {
     transition: all .35s ease-out;
     /* top: 102px; */
     top:0px;
-    padding-top: 31px;
-    padding-left: 31px;
-    padding-right: 31px;
-    padding-bottom: 31px;
+
 
     /* margin-left: 80px; */
     letter-spacing: 1px;
@@ -457,7 +455,7 @@ h1 {
         display: flex;
         -webkit-box-pack: start;
                 justify-content: flex-start;
-
+        padding: 32px;
     }
 .secondary-nav__item { /* li */
 
@@ -601,8 +599,12 @@ h1 {
         background: -webkit-gradient(linear, left top, right top, from(rgba(20, 0, 218, 0.83)), to(rgba(116, 20, 204, 0.79)));
         background: linear-gradient(to right, rgba(20, 0, 218, 0.83) 0%, rgba(116, 20, 204, 0.79) 100%);
         background: -webkit-linear-gradient(to right, rgba(20, 0, 218, 0.83) 0%, rgba(116, 20, 204, 0.79) 100%);
-
     }
+.page-myself .hero::after {
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(72,38,185, 1)), to(rgba(185,47,139, 1)));
+            background: linear-gradient(to bottom, rgba(72,38,185, 1) 0%, rgba(185,47,139, 1) 100%);
+            background: -webkit-linear-gradient(to bottom, rgba(72,38,185, 1) 0%, rgba(185,47,139, 1) 100%);
+        }
 .hero__heading {
             position: absolute;
             z-index: 1;

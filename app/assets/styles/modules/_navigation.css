@@ -91,7 +91,8 @@
 }
 
 .secondary-nav-container {
-    /* position: sticky; */
+    max-width: 1024px;
+    margin:0 auto;
 }
 
 .secondary-nav { /* nav */
@@ -102,10 +103,7 @@
     transition: all .35s ease-out;
     /* top: 102px; */
     top:0px;
-    padding-top: 31px;
-    padding-left: 31px;
-    padding-right: 31px;
-    padding-bottom: 31px;
+
 
     /* margin-left: 80px; */
     letter-spacing: 1px;
@@ -114,7 +112,7 @@
 
         display: flex;
         justify-content: flex-start;
-
+        padding: 32px;
     }
 
     &__item { /* li */

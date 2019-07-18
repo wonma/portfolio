@@ -7,7 +7,7 @@ class SectionWaypoints {
         this.secondaryNav = $('.secondary-nav');
         this.sectionLinks = $('.secondary-nav a');
         this.header = $('.site-header--dynamic');
-        this.headerTriggerPoint = $('.hero__heading--sub');
+        // this.headerTriggerPoint = $('.hero__heading--sub');
         this.colorTheLink();
         this.headerControl();
     }
@@ -17,7 +17,7 @@ class SectionWaypoints {
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function () {
             var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos && currentScrollPos > 200) { /* 이전스크롤위치가 현재스크롤위치보다 아래이면 */
+            if (prevScrollpos > currentScrollPos && currentScrollPos > 400) { /* 이전스크롤위치가 현재스크롤위치보다 아래이면 */
                 that.header[0].style.top = "0px"; /* 나오기 */
                 that.secondaryNav[0].style.top ="120px";
             } else  {
@@ -28,19 +28,19 @@ class SectionWaypoints {
             prevScrollpos = currentScrollPos;
         }
 
-        new Waypoint({
-            element: that.headerTriggerPoint[0],
-            handler: function(direction){
-                if(direction =="up") {
-                    $(that.header).addClass("hide-dynamic-header");
-                }
-                 else {
-                    $(that.header).removeClass("hide-dynamic-header");
-                }
-            },
-            offset: "-10%"
+        // new Waypoint({
+        //     element: that.secondaryNav,
+        //     handler: function(direction){
+        //         if(direction =="up") {
+        //             $(that.header).addClass("hide-dynamic-header");
+        //         }
+        //          else {
+        //             $(that.header).removeClass("hide-dynamic-header");
+        //         }
+        //     },
+        //     offset: "15%"
 
-        })    
+        // })    
     }
 
     colorTheLink() {
