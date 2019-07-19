@@ -1,9 +1,15 @@
 .section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    &__design {
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
+    /* margin-top: 80px; */
+    padding-top: 60px;
+    /* background-color: #f8f8f9; */
+    /* &__design {
         background-color: #FBF9FF;
+    } */
+
+    &__academy {
+        /* background-color: #FBF9FF; */
     }
 
     &__banner {
@@ -27,12 +33,12 @@
     }
 
     &__container { /* contain A-level */
-        border: 1px solid #999999;
+        /* border: 1px solid #999999; */
         max-width: 1024px;
         margin: 0 auto;
         
         @mixin atMedium {
-            padding-right: 300px;
+            padding-right: 20%;
         }
     }
 
@@ -49,11 +55,11 @@
     &__header {  /* wrapper A-level */
         padding: 0 32px;
         max-width: 700px;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 
     &__side {   /* wrapper A-level */
-        border: 1px solid orange;
+        /* border: 1px solid orange; */
 
         &--left-padding {
             padding: 0 32px;
@@ -113,11 +119,18 @@
     }
 
     &__heading {
-        font-size: 28px;
-        font-weight: 300;
+        margin-top: 20px;
+        transform: translateY(10px);
+        font-size: 24px;
+        font-weight: 500;
         line-height: 1.4;
-        margin-top: 30px;
+        letter-spacing: -0.8px;
+        /* color: $heading-black; */
+        /* margin-top: 30px; */
         transform: translateX(-2px); /* aligned to the left */
+        @mixin atSmall {
+            font-size: 32px;
+        }
     }
 
     &__paragraph {

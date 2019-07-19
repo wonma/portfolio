@@ -33,7 +33,11 @@
             position: absolute;
             z-index: 1;
             width: 100%;
-            margin-top: 150px;
+            margin-top: 100px;
+
+            @mixin atLarge {
+                margin-top: 150px;
+            }
 
         &--intro {
             font-size: 16px;
@@ -65,13 +69,14 @@
 
         &--main {
             margin-top: 20px;
-            font-size: 30pt;
+            font-size: 37pt;
         }
 
         &--sub {
             margin-top: 20px;
-            font-size: 18pt;
+            font-size: 18px;
             font-weight: 400;
+            opacity: .8;
         }
 
     }

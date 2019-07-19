@@ -1,11 +1,13 @@
 .cards {
     margin-top: 30px;
+    
     &__card { /* a */
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         display: block;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
         color: #505050;
+        border-bottom: 1px solid #E5E5E5;
 
         @mixin atSmall {
             /* width: 80%; */
@@ -14,14 +16,33 @@
 }
 
 .card {
-    &__img-container {
 
+    display: flex;
+    flex-direction: column;
+
+    @mixin atSmall {
+        flex-direction: row;
+    }
+
+    &__img-container {
+        flex-basis: 60%;
+    }
+
+    &__last {
+        border: none;
+        margin-bottom: 0;
     }
 
     &__info {
-        padding:0 32px;
+        padding:0 0px;
         display: flex;
         flex-direction: column;
+
+        @mixin atSmall {
+            justify-content: center;
+            padding-left: 20px;
+            flex-basis: 40%;
+        }
     }
 
     &__title {
@@ -32,6 +53,10 @@
 
     &__meta {
         margin-top: 20px;
-        color: #999;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: .8px;
+        color: #9B9B9B;
+        /* color: $primaryCol-point; */
     }
 }

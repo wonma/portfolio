@@ -9,6 +9,10 @@
         justify-content: flex-start;
         align-items: center;
         height: 120px; 
+
+        &--dynamic {
+            height: 60px; 
+        }
     }
 
     &__logo-text {
@@ -22,9 +26,10 @@
 
 .site-header--dynamic {
     position: fixed;
-    top: -120px;
+    height: 60px;
+    top: -90px;
     z-index: 110;
-    border: 1px solid orchid;
+    /* border: 1px solid orchid; */
 }
 
 .hide-dynamic-header {

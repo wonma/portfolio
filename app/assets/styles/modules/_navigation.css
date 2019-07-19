@@ -90,11 +90,6 @@
 
 }
 
-.secondary-nav-container {
-    max-width: 1024px;
-    margin:0 auto;
-}
-
 .secondary-nav { /* nav */
     
     position: sticky;
@@ -104,15 +99,20 @@
     /* top: 102px; */
     top:0px;
 
-
     /* margin-left: 80px; */
     letter-spacing: 1px;
+    border-bottom: 1px solid #F0EEEE;
+
+    &-container {
+        max-width: 1024px;
+        margin:0 auto;
+    }
+
 
     &__list { /* ul */
-
         display: flex;
         justify-content: flex-start;
-        padding: 32px;
+        padding: 28px 32px 32px 32px;
     }
 
     &__item { /* li */
@@ -123,6 +123,7 @@
         color:rgba(#000, .3);
         position: relative;
         margin-right: 20px;
+
         &.is-current-link {
             color: $primaryCol-point;
             &::after {
