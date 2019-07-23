@@ -233,6 +233,24 @@ h1 {
 		        transform: translateX(-30px);
 	}	
 }
+@-webkit-keyframes fadeIn {
+    0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+    0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 .row::after{
 		content: "";
 		clear: both;
@@ -266,15 +284,22 @@ h1 {
 /* base horizontal padding 
    centering */
 .container {
-    max-width: 1152px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 32px;
 }
-@media (min-width:800px){
+@media (min-width:1020px){
 .container {
-        max-width: 1024px
+        padding: 0 32px
 }
 	}
+.container--overlay {
+        position: relative;
+    }
+.container--dynamic-header {
+        /* background-color: #f8f6fe;  */
+        /* border-bottom: 1px solid #f0f0f0; */
+    }
 .site-content {
     position: relative;
     /* top:120px; */
@@ -353,14 +378,13 @@ h1 {
     }
 .overlay-nav {
     /* opacity: 0; */
-
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 58, 62, 0.92);
+    background-color: rgba(46, 58, 62, 1);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 150;
     -webkit-transform: translate3d(-100%, 0, 0);
             transform: translate3d(-100%, 0, 0);
 
@@ -373,29 +397,26 @@ h1 {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
     }
-.hamburger {
+.hamburger, .icon__close {
     width: 40px;
     height: 40px;
-    position: absolute;
-    z-index: 2;
-
+    z-index: 110;
 }
-/* border: 1px solid red; */
-.hamburger:hover {
+.hamburger:hover, .icon__close:hover {
         cursor: pointer;
     }
-.hamburger__icon, .hamburger::after, .hamburger::before {
+.hamburger--center, .hamburger::after, .hamburger::before, .icon__close--center, .icon__close::after, .icon__close::before {
         width: 28px;
         height: 2px;
-        background-color: #333;
-        -webkit-transition: all .5s ease-out;
-        transition: all .5s ease-out;
+        background-color: #fff;
+        -webkit-transition: all .8s ease-out;
+        transition: all .8s ease-out;
     }
-.hamburger__icon {
+.hamburger--center, .icon__close--center {
         position: absolute;
         top: 8px;
     }
-.hamburger::before {
+.hamburger::before, .icon__close::before {
         content: "";
         position: absolute;
         top: 0;
@@ -403,7 +424,7 @@ h1 {
         -webkit-transform-origin: 0 0;
                 transform-origin: 0 0;
     }
-.hamburger::after {
+.hamburger::after, .icon__close::after {
         content: "";
         position: absolute;
         top: 16px;
@@ -412,20 +433,49 @@ h1 {
         /* background-color: pink; */
 
     }
-.hamburger--is-close-icon::before {
+.hamburger {
+    top: 12px;
+    left: 15px;
+    position: relative;
+}
+.hamburger--black::after{
+        background-color: #000;
+    }
+.hamburger--black::before {
+        background-color: #000; 
+    }
+.hamburger--black .hamburger--center {
+        background-color: #000; 
+    }
+.icon__close {
+    top: 50px;
+    right: 16px;
+    position: absolute;
+    z-index: 200;
+    opacity: 0;
+}
+.icon__close--center {
+            -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+        }
+.icon__close::before {
 			-webkit-transform: rotate(45deg) scaleX(1.2) translateX(0px) translateY(-2px);
 			        transform: rotate(45deg) scaleX(1.2) translateX(0px) translateY(-2px);
             background-color: #fff;
         }
-.hamburger--is-close-icon .hamburger__icon {
-			/* opacity:0; */
-			-webkit-transform: scaleX(0);
-			        transform: scaleX(0);
-		}
-.hamburger--is-close-icon::after {
+.icon__close::after {
 			-webkit-transform: rotate(-45deg) scaleX(1.2) translateX(-4px) translateY(4px);
 			        transform: rotate(-45deg) scaleX(1.2) translateX(-4px) translateY(4px);
             background-color: #fff;
+        }
+.icon__close--is-on{
+            animation: fadeIn 1s ease 300ms alternate forwards;
+            -webkit-animation: fadeIn 1s ease 300ms alternate forwards;
+        }
+.icon__close--is-on-at-dynamic {
+            animation: fadeIn 1s ease 300ms alternate forwards;
+            -webkit-animation: fadeIn 1s ease 300ms alternate forwards;
+            top: 20px;
         }
 .secondary-nav { /* nav */
     
@@ -481,11 +531,18 @@ h1 {
     -webkit-transition: all .35s ease-out;
     transition: all .35s ease-out;
 }
+.site-header--no-bg {
+        background-color: transparent;
+    }
+.site-header--standard {
+        position: absolute;
+        z-index: 1;
+    }
 .site-header__content {
         display: -webkit-box;
         display: flex;
-        -webkit-box-pack: start;
-                justify-content: flex-start;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
                 align-items: center;
         height: 120px;
@@ -495,10 +552,18 @@ h1 {
         }
 .site-header__logo-text {
         font-size: 32px;
-        margin-left: 60px;
-        margin-top: 10px;
-        font-weight: 900;
-        letter-spacing: -1.04px;
+        margin-top: -1px;
+        font-weight: 700;
+        letter-spacing: -.5px;
+        color: #fff;
+    }
+.site-header__logo-text--black {
+            color: #000;
+            font-weight: 900;
+            letter-spacing: -1px;
+        }
+.site-header__menu-content {
+        position: relative;
     }
 .site-header--dynamic {
     position: fixed;
@@ -589,6 +654,19 @@ h1 {
 .hero--subpage {
         height: 446px;
     }
+.page-work1 .hero {
+        background-image: url('../../assets/images/work_hero_01_mine.jpg');
+        background-size: cover;
+        -webkit-background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+@media (min-width:800px){
+.page-work1 .hero {
+            background-attachment: fixed;
+            -webkit-background-attachment: fixed
+    }
+	}
 .hero::after {
         content: '';
         display:  block;
@@ -607,11 +685,14 @@ h1 {
             background: linear-gradient(to bottom, rgba(72,38,185, 1) 0%, rgba(185,47,139, 1) 100%);
             background: -webkit-linear-gradient(to bottom, rgba(72,38,185, 1) 0%, rgba(185,47,139, 1) 100%);
         }
+.page-work1 .hero::after {
+            background: rgba(59, 62, 83, .5);
+        }
 .hero__heading {
             position: absolute;
             z-index: 1;
             width: 100%;
-            margin-top: 100px;
+            margin-top: 200px;
 
     }
 @media (min-width:1020px){

@@ -1,12 +1,19 @@
 /* base horizontal padding 
    centering */
 .container {
-    max-width: 1152px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 32px;
 
-    @mixin atMedium {
-        max-width: 1024px;
+    @mixin atLarge {
+        padding: 0 32px;
+    }
+    &--overlay {
+        position: relative;
+    }
+    &--dynamic-header {
+        /* background-color: #f8f6fe;  */
+        /* border-bottom: 1px solid #f0f0f0; */
     }
 }
 

@@ -14,14 +14,13 @@
 
 .overlay-nav {
     /* opacity: 0; */
-
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 58, 62, 0.92);
+    background-color: rgba(46, 58, 62, 1);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 150;
     transform: translate3d(-100%, 0, 0);
 
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
@@ -33,24 +32,23 @@
 }
 
 
-.hamburger {
+.hamburger, .icon__close {
     width: 40px;
     height: 40px;
-    position: absolute;
-    z-index: 2;
-    /* border: 1px solid red; */
+    z-index: 110;
+
     &:hover {
         cursor: pointer;
     }
 
-    &__icon, &::after, &::before {
+    &--center, &::after, &::before {
         width: 28px;
         height: 2px;
-        background-color: #333;
-        transition: all .5s ease-out;
+        background-color: #fff;
+        transition: all .8s ease-out;
     }
 
-    &__icon {
+    &--center {
         position: absolute;
         top: 8px;
     }
@@ -70,25 +68,60 @@
         /* background-color: pink; */
 
     }
+}
 
-    &--is-close-icon {
+.hamburger {
+    top: 12px;
+    left: 15px;
+    position: relative;
+}
+
+.hamburger{
+    &--black::after{
+        background-color: #000;
+    } 
+    &--black::before {
+        background-color: #000; 
+    }
+    &--black .hamburger--center {
+        background-color: #000; 
+    }
+}
+
+.icon__close {
+    top: 50px;
+    right: 16px;
+    position: absolute;
+    z-index: 200;
+    opacity: 0;
+        &--center {
+            transform: scaleX(0);
+        }    
+
         &::before {
 			transform: rotate(45deg) scaleX(1.2) translateX(0px) translateY(-2px);
             background-color: #fff;
         }
-
-		& .hamburger__icon {
-			/* opacity:0; */
-			transform: scaleX(0);
-		}
-
 		&::after {
 			transform: rotate(-45deg) scaleX(1.2) translateX(-4px) translateY(4px);
             background-color: #fff;
         }
-    }
 
+        &--is-on{
+            animation: fadeIn 1s ease 300ms alternate forwards;
+            -webkit-animation: fadeIn 1s ease 300ms alternate forwards;
+        }
+
+        &--is-on-at-dynamic {
+            animation: fadeIn 1s ease 300ms alternate forwards;
+            -webkit-animation: fadeIn 1s ease 300ms alternate forwards;
+            top: 20px;
+        }
 }
+
+
+
+
 
 .secondary-nav { /* nav */
     
