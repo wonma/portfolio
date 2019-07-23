@@ -13,19 +13,22 @@
         letter-spacing: 1px;
     }
 
-    &--resume {
-        display: inline-block;
+    &--edge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         z-index: 1;
+        width: 195px;
+        height: 45px;
         transform: rotate(90deg);
         background-color: #fff;
         letter-spacing: .8px;
         /* margin: 30px 0; */
 
         &--top-right {
-            top: 90px;
-            padding: 12px 65px;
-            right: -100px;
+            top: 75px;
+            right: -80px;
 
             @mixin atMedium {
                 top: 0px;
@@ -34,15 +37,18 @@
         }
 
         &--bottom-right{
-            bottom: 90px;
-            padding: 12px 65px;
-            right: -100px;
+            bottom: 75px;
+            right: -80px;
 
             @mixin atMedium {
                 bottom: 0px;
                 /* left: 0; */
                 right: 0;
             }
+        }
+
+        &--f-bw {
+            color: rgb(50, 50, 50);
         }
 
         @mixin atMedium {

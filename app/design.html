@@ -11,9 +11,21 @@
 </head>
 
 <body class="page-myself">
-    <header class="site-header site-header--standard">
+    <div class="overlay-nav">
+        <div class="container container--overlay">
+            <div class="overlay-nav__close-icon icon__close">
+                <div class="icon__close--center"></div>
+            </div>
+            this is overaly nav
+        </div>
+    
+    </div>
+    <header class="site-header site-header--standard site-header--no-bg">
         <div class="container">
             <div class="site-header__content">
+                <div class="site-header__logo">
+                    <div class="site-header__logo-text">wonmi</div>
+                </div>
                 <div class="site-header__menu-content">
                     <nav class="primary-nav">
                         <ul class="primary-nav__list">
@@ -29,21 +41,18 @@
                         </ul>
                     </nav>
                     <div class="hamburger">
-                        <div class="hamburger__icon"></div>
+                        <div class="hamburger--center"></div>
                     </div>
-                    <div class="overlay-nav">
-                        this is overaly nav
-                    </div>
-                </div>
-                <div class="site-header__logo">
-                    <div class="site-header__logo-text">wonmi</div>
                 </div>
             </div>
         </div>
     </header>
-    <header class="site-header site-header--dynamic">
-        <div class="container">
+    <div class="site-header site-header--dynamic">
+        <div class="container container--dynamic-header">
             <div class="site-header__content site-header__content--dynamic">
+                <div class="site-header__logo">
+                    <div class="site-header__logo-text site-header__logo-text--black">wonmi</div>
+                </div>
                 <div class="site-header__menu-content">
                     <nav class="primary-nav">
                         <ul class="primary-nav__list">
@@ -58,19 +67,16 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="hamburger">
-                        <div class="hamburger__icon"></div>
+                    <div class="hamburger hamburger--black">
+                        <div class="hamburger--center"></div>
                     </div>
-                    <div class="overlay-nav">
-                        this is overaly nav
-                    </div>
-                </div>
-                <div class="site-header__logo">
-                    <div class="site-header__logo-text">wonmi</div>
+                    <!-- <div class="overlay-nav">
+                            this is overaly nav
+                        </div> -->
                 </div>
             </div>
         </div>
-    </header>
+    </div>
     <main class="site-content">
         <div class="hero hero--subpage">
             <h1 class="hero__heading">
@@ -96,7 +102,7 @@
                 </ul>
             </div>
         </nav>
-        <section id="myself-paths" class="myself-section section section__myself " data-matching-link="#myself-paths-link">
+        <section id="myself-paths" class="anchored-section section section__myself " data-matching-link="#myself-paths-link">
             <div class="section__container">
                 <header class="section__header">
                     <h2 class="section__heading">Learning from Professionals.</h2>
@@ -140,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section id="myself-skills" class="myself-section section section__academy" data-matching-link="#myself-skills-link">
+        <section id="myself-skills" class="anchored-section section section__academy" data-matching-link="#myself-skills-link">
             <div class="section__container">
                 <header class="section__header">
                     <h2 class="section__heading">Learning from Professionals.</h2>
@@ -205,7 +211,7 @@
                 </div>
             </div>
         </section>
-        <section id="myself-goals" class="myself-section section" data-matching-link="#myself-goals-link">
+        <section id="myself-goals" class="anchored-section section" data-matching-link="#myself-goals-link">
             <div class="section__container">
                 <header class="section__header">
                     <h2 class="section__heading">Learning from Professionals.</h2>
