@@ -20,5 +20,6 @@
 @import 'modules/_card';
 @import 'modules/_site-map';
 
+@import 'page/_project';
 
 @import 'base/_utilities';

@@ -1,16 +1,5 @@
 .section {
-    /* padding-top: 80px;
-    padding-bottom: 80px; */
-    /* margin-top: 80px; */
-    padding-top: 60px;
-    /* background-color: #f8f8f9; */
-    /* &__design {
-        background-color: #FBF9FF;
-    } */
-
-    &__academy {
-        /* background-color: #FBF9FF; */
-    }
+    padding-top: 60px; /* General sections for all pages */
 
     &__banner {
         background-color: $primaryCol;
@@ -33,13 +22,18 @@
     }
 
     &__container { /* contain A-level */
-        /* border: 1px solid #999999; */
-        max-width: 1024px;
+        max-width: 960px;
         margin: 0 auto;
         
         @mixin atMedium {
             padding-right: 20%;
         }
+    }
+
+    &__container--full {
+        max-width: 960px;
+        padding: 0 32px;
+        margin: 80px auto;      
     }
 
     &__illust {

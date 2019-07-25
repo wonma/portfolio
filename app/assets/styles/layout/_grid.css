@@ -1,5 +1,27 @@
 .row {
     @mixin clearfix;
+    /* margin-bottom: 40px; */
+    &__mtb {
+        padding: 40px 0;
+    }
+
+    &__border {
+        border-bottom: 1px solid #EFEFEF;
+    }
+
+    &--gutters > div {
+        margin-bottom: 20px;
+    }
+
+    @mixin atMedium {
+        &--gutters {
+            margin-right: -35px;
+        }
+
+        &--gutters > div {
+            padding-right: 35px;
+        }        
+    }
 }
 
 .gutters {
@@ -18,18 +40,25 @@
 }
 
 .col {
-    &--4 {
-        float:left;
-        width:33.33%;
+    &--mt-until-medium { margin-top: 30px; }
+
+    @mixin atMedium {
+        &--mt-until-medium { margin-top: 0; }
+
+        &--m-4 { /* Full class name example: cal--m-4 */
+            float:left;
+            width:33.33%;
+        }
+
+        &--m-6 {
+            float:left;
+            width:50%;
+        }
+
+        &--m-8 {
+            float:left;
+            width:66.66%;
+        }
     }
 
-    &--6 {
-        float:left;
-        width:50%;
-    }
-
-    &--8 {
-        float:left;
-        width:66.66%;
-    }
 }

@@ -1,0 +1,87 @@
+.project {
+    &-section {
+        margin-bottom: 90px;  /* 3 project-sections : intro, process, end */
+
+        &--full-image {
+            background-image: url('../../assets/images/work_start_02_mine.jpg');
+            background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__col--flip-order {
+        display: flex;
+        flex-direction: column;
+
+        @mixin atMedium {
+            & .project__img--desc {
+                order: 2;
+            }
+            padding-top: 60px;
+        }
+    }
+
+    &__img--half {
+        width: 100%;
+    }
+
+    &__img--desc {  /* p */
+
+    }
+
+    &__title {
+        margin-bottom: 32px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        font-weight: 400;
+        color: #252525;
+        margin-bottom: 62px;
+
+        &--number {
+            display: block;
+            margin-bottom: 10px;
+            color: #5938FF;
+        }
+
+        &--ac { /* align center */
+            @mixin atMedium {
+                text-align: center;
+            }
+        }
+
+        /* &--al {
+            text-align: left;
+        } */
+    }
+
+    &__box {
+        @mixin atMedium {
+            text-align: center;
+        }
+    }
+
+    &__meta dt {
+        margin-top: 34px;
+        font-size: 15px;
+        &:first-child {
+            margin-top: 0;   
+        }
+    }
+
+    &__meta dd {
+        margin-top: 8px;
+        font-size: 15px;
+        color: rgb(150, 150, 150);
+    }
+}
