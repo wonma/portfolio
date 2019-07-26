@@ -7,6 +7,51 @@
 
     }
 
+    &-two-circles {
+        display: flex;
+        justify-content: center;
+        margin-left: -30px;
+        margin-bottom: 40px;
+
+        &__left {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+
+            background-image: url('../../assets/images/img_woman.jpg');
+            background-position: 60% center;
+            background-size: cover;
+        }
+
+        &__right {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 1px solid #eaeaea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -30px;
+            margin-top: 20px;
+            /* position: relative;
+            left:0; */
+
+        }
+
+        &__desc {
+            margin-top: 8px;
+            font-size: 15px;
+            color: rgb(150, 150, 150);
+            letter-spacing: .6px;
+            line-height: 1.6;
+
+            & strong {
+                color: #8149ff;
+                font-weight: 400;
+            }
+        }
+    }
+
     &__circle {
         position: relative;
         font-size: 14px;

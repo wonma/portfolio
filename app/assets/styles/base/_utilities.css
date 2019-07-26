@@ -42,3 +42,7 @@
 .no-mt {
     margin-top: 0;
 }
+
+.clip-circle {
+    /* border-radius: 50%; */
+}

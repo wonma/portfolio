@@ -30,6 +30,10 @@ h1 {
         margin-bottom: 20px;
     }
 
+    &--mb--small {
+        margin-bottom: 10px;
+    }
+
     &--mt {
         margin-top: 30px;
     }
