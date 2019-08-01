@@ -12,6 +12,13 @@
         /* background-color: #f8f6fe;  */
         /* border-bottom: 1px solid #f0f0f0; */
     }
+    &--centered-desc {
+        @mixin atMedium {
+            margin: 0 auto;
+            max-width: 760px;
+            margin-bottom: 50px;
+        }
+    }
 }
 
 .site-content {

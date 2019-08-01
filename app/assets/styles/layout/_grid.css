@@ -61,4 +61,22 @@
         }
     }
 
+    &-2-by-2 {
+        display: flex;
+        flex-wrap: wrap;
+
+        & > li {
+            margin-bottom: 30px;
+            margin-right: 3%;
+            padding: 16px 30px 16px 16px;
+            @mixin atSmall {
+                flex: 0 0 46%;
+            }
+        }
+
+        & > li:nth-child(even) {
+            margin-right: 0;
+        }
+    }
+
 }

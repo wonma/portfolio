@@ -337,6 +337,25 @@ h1 {
             width:66.66%;
         }
 	}
+.col-2-by-2 {
+        display: -webkit-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+.col-2-by-2 > li {
+            margin-bottom: 30px;
+            margin-right: 3%;
+            padding: 16px 30px 16px 16px;
+        }
+@media (min-width:600px){
+.col-2-by-2 > li {
+                -webkit-box-flex: 0;
+                        flex: 0 0 46%
+        }
+	}
+.col-2-by-2 > li:nth-child(even) {
+            margin-right: 0;
+        }
 /* base horizontal padding 
    centering */
 .container {
@@ -351,6 +370,13 @@ h1 {
         /* background-color: #f8f6fe;  */
         /* border-bottom: 1px solid #f0f0f0; */
     }
+@media (min-width:800px){
+.container--centered-desc {
+            margin: 0 auto;
+            max-width: 760px;
+            margin-bottom: 50px
+    }
+	}
 .site-content {
     position: relative;
     /* top:120px; */
@@ -1251,6 +1277,44 @@ h1 {
 .icon-phone {
     width: 40px;
 }
+.numberbox {
+    border-bottom: 1px solid rgb(234, 234, 234);
+    display: -webkit-box;
+    display: flex;
+}
+@media (min-width:800px){
+.numberbox {
+        border: 1px solid rgb(234, 234, 234)
+}
+	}
+.numberbox__number {
+        padding-left: 10px;
+        padding-right: 30px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+                align-items: center;
+        font-size: 25px;
+        color:  #DED3FF;
+    }
+@media (min-width:800px){
+.numberbox__number {
+            padding-left: 40px
+    }
+	}
+.numberbox__content {
+
+    }
+.numberbox__heading {
+        font-size: 15px;
+        margin-bottom: 10px;
+        color: #8149ff;
+    }
+.numberbox__desc {
+
+    }
 .project-section {
         margin-bottom: 90px;
     }
@@ -1325,12 +1389,13 @@ h1 {
         font-size: 22px;
         font-weight: 400;
         color: #252525;
-        margin-bottom: 62px;
-
-        /* &--al {
-            text-align: left;
-        } */
+        margin-bottom: 42px;
     }
+@media (min-width:800px){
+.project__subtitle {
+            margin-bottom: 62px
+    }
+	}
 .project__subtitle--number {
             display: block;
             margin-bottom: 10px;
@@ -1343,10 +1408,56 @@ h1 {
         }
 	}
 @media (min-width:800px){
-.project__box {
+.project__boxes {
             text-align: center
     }
 	}
+.project__box-container  {
+        /* padding-right: 20%; */
+        width: 100%;
+        height: 260px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+    }
+.project__box-container > p {
+            -webkit-box-flex: 1;
+                    flex: 1 1 100%;
+        }
+@media (min-width:800px){
+.project__box-container  {
+            /* padding-right: 20px; */
+            height: 320px
+    }
+	}
+.project__box-img {
+        margin-top: 30px;
+        /* border: 1px solid red; */
+        height: 350px;
+    }
+.project__box-img--1 {
+            background-image: url('../../assets/images/visual-strategy_01.jpg');
+            background-size: 120% auto;
+            background-position: center center;
+        }
+.project__box-img--2 {
+            background-image: url('../../assets/images/visual-strategy_02.jpg');
+            background-size: 120% auto;
+            background-position: center center;
+        }
+.project__box-img--3 {
+            background-image: url('../../assets/images/visual-strategy_03.jpg');
+            background-size: 120% auto;
+            background-position: center center;
+        }
+.project__box-title {
+        padding: 30px 10px 0 10px;
+    }
+.project__box-desc {
+        padding: 0 25px;
+    }
 .project__meta dt {
         margin-top: 34px;
         font-size: 15px;
@@ -1358,6 +1469,9 @@ h1 {
         margin-top: 8px;
         font-size: 15px;
         color: rgb(150, 150, 150);
+    }
+.project__flow-chart {
+        padding: 20px;
     }
 /* .mh-16 {
     padding-left: 16px;
@@ -1378,14 +1492,6 @@ h1 {
 .p-20 {
     padding: 30px;
 }
-.mini-box-container {
-    padding-right: 20%;
-}
-@media (min-width:800px){
-.mini-box-container {
-        padding-right: 20px
-}
-	}
 .bg--light {
     background-color: #f8f5ff;
 }
