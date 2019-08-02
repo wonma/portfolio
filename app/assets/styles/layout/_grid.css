@@ -13,6 +13,16 @@
         margin-bottom: 20px;
     }
 
+    @mixin atSmall {
+        &--gutters {
+            margin-right: -20px;
+        }
+
+        &--gutters > div {
+            padding-right: 20px;
+        }
+    }
+
     @mixin atMedium {
         &--gutters {
             margin-right: -35px;
@@ -42,6 +52,24 @@
 .col {
     &--mt-until-medium { margin-top: 30px; }
 
+    @mixin atSmall {
+       &--s-4 { /* Full class name example: cal--m-4 */
+            float:left;
+            width:33.33%;
+        }
+
+        &--s-6 {
+            position: relative;
+            float:left;
+            width:50%;
+        }
+
+        &--s-8 {
+            float:left;
+            width:66.66%;
+        }
+    }
+
     @mixin atMedium {
         &--mt-until-medium { margin-top: 0; }
 
@@ -69,7 +97,7 @@
             margin-bottom: 30px;
             margin-right: 3%;
             padding: 16px 30px 16px 16px;
-            @mixin atSmall {
+            @mixin atMedium {
                 flex: 0 0 46%;
             }
         }
