@@ -1,5 +1,9 @@
 .slider-image {
     /* border: 1px solid orange; */
+    width: 120%;
+    transform: translateX(-8.5%);
+    height: 500px;
+
     @mixin atMedium {
         float: left;
         width: 100%;   
@@ -8,6 +12,7 @@
 }
 
 .slider-content {
+    /* background-color: #fff; */
     position: relative;
     /* background-color: yellow; */
     height: 60%;
@@ -33,6 +38,7 @@
     color: #AF91FF;
     transform: translateY(100%);
     text-align: right;
+
     @mixin atSmall {
         transform: translateY(0);
         text-align: left;
@@ -42,18 +48,27 @@
 
 .item-i {
     display: inline-block;
+    height: 700px;
     /* border: 1px solid red;
     background-color: red; */
 }
 
 .img-wrapper {
-    width: 100%;    
-    height: auto;
+    /* width: auto;     */
+    height: 500px;
+    /* overflow: scroll;
+    -webkit-overflow-scrolling: touch; */
+    @mixin atMedium {
+        height: 600px;  
+    }
 }
 
 .img {
-   width: 100%;
-   height: auto;
+   width: auto;
+   margin: 0 auto;
+   transform: translateY(40px);
+   height: 90%;
+   box-shadow: rgba(136, 139, 162, 0.18) 10px 11px 44px;
 }
 
 .item-c {
@@ -80,28 +95,54 @@ button.slick-arrow {
     border: none;
     position: absolute;
     border: 1px solid #eaeaea;
-    background-color: white;
-    width: 50%;
-    height: 64px;
-    /* left: 0; */
+    background-color: transparent;
+    width: 64px;
+    height: 300px;
     z-index: 999;
+    top: 0;
+    transform: translateY(-140%);
 
     @mixin atSmall {
-            margin-top: 30px;
-
+        margin-top: 30px;
         width: 64px;
+        /* height: 64px; */
+        /* transform: translateY(0); */
+    }
+
+    @mixin atMedium {
+        transform: translateY(0);
+        height: 64px;
+        top: 60%;
     }
 }
 
+button.slick-arrow:hover {
+    cursor: pointer;
+}
+
+button.slick-arrow:active {
+    background-color: #f8f5ff;
+}
+
+
 button.slick-prev {
-    top: 70%;
+    text-indent: -9999px;
     left:0;
+    @mixin atSmall {
+        left: 20%;
+    }
+    @mixin atMedium {
+        left: 0;  
+    }
 }
 
 button.slick-next {
-    top: 70%;
+    text-indent: -9999px;
     right: 0;
     @mixin atSmall {
+        right: 20%;
+    }
+    @mixin atMedium {
         left: 63px;
     }
     /* transform: translateX(-65px); */

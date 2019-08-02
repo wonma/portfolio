@@ -14,8 +14,9 @@ class DoubleSlider {
             slidesToScroll: 1,
             arrows: false,
             asNavFor: '.slider-content',
-            autoplaySpeed: 2000,
-            autoplay: true
+            // fade: true
+            // autoplaySpeed: 2000,
+            // autoplay: true
         });
 
         var theStatus = this.status;

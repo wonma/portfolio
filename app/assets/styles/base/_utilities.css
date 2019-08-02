@@ -34,6 +34,6 @@
     margin-top: 0;
 }
 
-.clip-circle {
-    /* border-radius: 50%; */
+.move-upwards {
+    transform: translateY(-40px);
 }
