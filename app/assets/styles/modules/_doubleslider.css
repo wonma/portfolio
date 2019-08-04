@@ -9,6 +9,15 @@
         width: 100%;   
         transform: translateY(-150px);
     }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 38%;
+        width: 100%;
+        height: 200px;
+        background-color: $primaryCol-lightest;           
+    }
 }
 
 .slider-content {
@@ -28,23 +37,6 @@
     color: #8149ff;
 }
 
-.pagingInfo {
-    position: absolute;
-    bottom: -10px;
-    left: -70px;
-    border: 1px solid pink;
-    font-size: 14px;
-    letter-spacing: 2px;
-    color: #AF91FF;
-    transform: translateY(100%);
-    text-align: right;
-
-    @mixin atSmall {
-        transform: translateY(0);
-        text-align: left;
-        margin-bottom: 20px;
-    }
-}
 
 .item-i {
     display: inline-block;
@@ -91,15 +83,38 @@
 }
 
 
+.pagingInfo {
+    position: absolute;
+    /* bottom: -10px; */
+    top: 62%;
+    right: 0;
+    /* border: 1px solid pink; */
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #AF91FF;
+    transform: translateY(100%);
+    text-align: right;
+
+    @mixin atSmall {
+        transform: translateY(0);
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    @mixin atMedium {
+        top:64%;
+        left: 40%;
+    }
+}
+
 button.slick-arrow {
     border: none;
     position: absolute;
-    border: 1px solid #eaeaea;
     background-color: transparent;
     width: 64px;
     height: 300px;
     z-index: 999;
-    top: 0;
+    top: 40px;
     transform: translateY(-140%);
 
     @mixin atSmall {
@@ -110,11 +125,13 @@ button.slick-arrow {
     }
 
     @mixin atMedium {
+        border: 1px solid #eaeaea;
         transform: translateY(0);
         height: 64px;
-        top: 60%;
+        top: 100%;
     }
 }
+
 
 button.slick-arrow:hover {
     cursor: pointer;
@@ -126,8 +143,8 @@ button.slick-arrow:active {
 
 
 button.slick-prev {
-    text-indent: -9999px;
-    left:0;
+    /* text-indent: -9999px; */
+    left: -30px;
     @mixin atSmall {
         left: 20%;
     }
@@ -138,7 +155,7 @@ button.slick-prev {
 
 button.slick-next {
     text-indent: -9999px;
-    right: 0;
+    right: -30px;
     @mixin atSmall {
         right: 20%;
     }
@@ -146,4 +163,25 @@ button.slick-next {
         left: 63px;
     }
     /* transform: translateX(-65px); */
+}
+
+
+.icon__arrow {
+    content:'';
+    display: block;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-54%) translateY(-50%) rotate(45deg);
+    border-right: 1px solid $primaryCol-point;
+    border-top: 1px solid $primaryCol-point;
+}
+
+.icon__arrow--left {
+    transform: translateX(-40%) translateY(-50%) rotate(-135deg);
+}
+
+.icon__arrow--right {
+
 }

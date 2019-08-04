@@ -32,7 +32,8 @@ class DoubleSlider {
             asNavFor: '.slider-image',
             arrows: true,
             fade: true,
-            // autoplay: true,
+            prevArrow: '<button class="slick-arrow slick-prev"><span class="icon__arrow icon__arrow--left"></span></button>',
+            nextArrow: '<button class="slick-arrow slick-next"><span class="icon__arrow icon__arrow--right"></span></button>',
             focusOnSelect: true
         })
     }
