@@ -145,6 +145,35 @@
         padding: 0 25px 30px 25px;
     }
 
+    &__meta {
+
+    }
+
+    &__meta-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & > div:nth-child(odd) {
+            flex: 0 1 60%;
+            margin-bottom: 20px;
+            @mixin atSmall {
+                flex: 0 1 33%;
+            }
+            @mixin atMedium {
+                flex: 0 1 100%;
+            }
+        }
+
+        & > div:nth-child(even) {
+            flex: 0 1 40%;
+            margin-bottom: 20px;    
+            @mixin atSmall {
+                flex: 0 1 33%;
+            }
+        }
+    }
+
     &__meta dt {
         margin-top: 34px;
         font-size: 15px;

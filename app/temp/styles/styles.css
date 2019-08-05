@@ -1819,6 +1819,45 @@ button.slick-next {
 .project__box-desc {
         padding: 0 25px 30px 25px;
     }
+.project__meta {
+
+    }
+.project__meta-container {
+        display: -webkit-box;
+        display: flex;
+        width: 100%;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
+        flex-wrap: wrap;
+    }
+.project__meta-container > div:nth-child(odd) {
+            -webkit-box-flex: 0;
+                    flex: 0 1 60%;
+            margin-bottom: 20px;
+        }
+@media (min-width:600px){
+.project__meta-container > div:nth-child(odd) {
+                -webkit-box-flex: 0;
+                        flex: 0 1 33%
+        }
+	}
+@media (min-width:800px){
+.project__meta-container > div:nth-child(odd) {
+                -webkit-box-flex: 0;
+                        flex: 0 1 100%
+        }
+	}
+.project__meta-container > div:nth-child(even) {
+            -webkit-box-flex: 0;
+                    flex: 0 1 40%;
+            margin-bottom: 20px;
+        }
+@media (min-width:600px){
+.project__meta-container > div:nth-child(even) {
+                -webkit-box-flex: 0;
+                        flex: 0 1 33%
+        }
+	}
 .project__meta dt {
         margin-top: 34px;
         font-size: 15px;
