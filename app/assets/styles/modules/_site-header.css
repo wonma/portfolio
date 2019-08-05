@@ -53,6 +53,32 @@
         }
     }
 
+    &__pagination {
+        @mixin atMedium {
+            display: none;
+        }
+        /* display: none; */
+        margin-left: auto;
+        position: relative;
+        padding-right: 20px;
+        color: rgba(255, 255, 255, .6);
+        letter-spacing: .6px;
+
+        & a {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            right: 2px;
+            width: 1px;
+            height: 150%;
+            background-color: rgba(255, 255, 255, .2);
+        }
+    }
+
     &__menu-content {
         position: relative;
     }

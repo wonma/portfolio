@@ -50,24 +50,24 @@
             position: absolute;
             z-index: 1;
             width: 100%;
-            margin-top: 200px;
+            margin-top: 150px;
 
-            @mixin atLarge {
-                margin-top: 150px;
+            @mixin atMedium {
+                margin-top: 200px;
             }
 
         &--intro {
             font-size: 16px;
-            font-weight: 300;
             letter-spacing: 1.8px;
             width: 240px;
+            color: rgba(255, 255, 255, .9);
             /* margin: 0 auto; */
             line-height: 1.6;
         }
 
         &--concept {
             margin-top: 20px;
-            font-size: 28pt;
+            font-size: 50px;
             letter-spacing: 5pt;
             font-weight: 700;
 
@@ -86,7 +86,10 @@
 
         &--main {
             margin-top: 20px;
-            font-size: 37pt;
+            font-size: 50px;
+            @mixin atSmall {
+                font-size: 60px;
+            }
         }
 
         &--sub {
