@@ -4,12 +4,37 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        width: 346px;
+        width: 280px;
     }
 
-    &__list li {
+    & a {
+        color: $grey-font;
+        font-weight: 400;
+        letter-spacing: .1px;
     }
 
+    &__item.active {
+        & a {
+            color: #101314;
+        }
+    }
+
+    &__item--darkbg a {
+        color: #fff;
+        font-weight: 400;
+        opacity: .5;
+        letter-spacing: .1px;
+    }
+
+    &__item--darkbg.active {
+        & a {
+            opacity: 1;
+        } 
+    }
+
+    @mixin atMedium {
+        display: block;
+    }
 }
 
 .overlay-nav {
@@ -74,6 +99,10 @@
     top: 12px;
     left: 15px;
     position: relative;
+
+    @mixin atMedium {
+        display: none;
+    }
 }
 
 .hamburger{
