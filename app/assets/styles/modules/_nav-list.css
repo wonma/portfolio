@@ -1,38 +1,35 @@
 .nav-list {
-    &__containter {
-        /* border-top: 1px solid #000; */
-        /* border-bottom: 1px solid #000; */
-    }
-
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    /* white-space: normal; [1] */
-    /* overflow-x: auto; [2] */
-    /* -webkit-overflow-scrolling: touch; [3] */
-    /* -ms-overflow-style: -ms-autohiding-scrollbar; [4] */
-    /* overflow:hidden; */
-    /* @mixin atSmall {
+    /* flex-wrap: wrap; */
+    white-space: normal; 
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    @mixin atSmall {
         white-space: normal;
-    } */
+    }
 
     &__item {
         /* border: 1px solid #F1F2F6; */
         margin-right: 4%;
         margin-bottom: 20px;
         /* width: 200px; */
-        flex-grow: 0;
+        /* flex-grow: 0;
         flex-shrink: 1;
-        flex-basis: 48%;
+        flex-basis: 48%; */
 
+        /*         
         @mixin atMedium {
             margin-right: 2%;
             flex-basis: 32%;
-        }
+        } */
     }
 
-    &__item:nth-child(even) {
+    /* &__item:nth-child(even) {
         margin-right: 0;    
-    }
+    } */
 
     &__link {
         /* display: block; */
@@ -64,14 +61,14 @@
     }
 
     &__thum {
-        border-radius: 50%;
+        /* border-radius: 50%; */
         margin-top: 20px;
-        width: 80px;
+        width: 150px;
         height: 80px;
         border: 1px solid #F1F2F6;
 
-            background-image: url('../../assets/images/visual-strategy_03.jpg');
-            background-size: 200%;
+            background-image: url('../../assets/images/work_hero_01_mine.jpg');
+            background-size: 150%;
             background-repeat: no-repeat;
             background-position: center center;
             position: relative;
