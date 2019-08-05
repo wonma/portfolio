@@ -25,6 +25,10 @@
     }
 
     &__logo-text {
+        display: none;
+        @mixin atSmall {
+            display: block;
+        }
         font-size: 32px;
         margin-top: -1px;
         font-weight: 700;
@@ -35,6 +39,17 @@
             color: #000;
             font-weight: 900;
             letter-spacing: -1px;
+        }
+    }
+
+    &__logo-emblem {
+        &-container {
+            margin-top: 4px;
+            transform: scale(1.2);
+
+            @mixin atSmall {
+                display: none;
+            }
         }
     }
 

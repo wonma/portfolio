@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     white-space: normal; 
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
 

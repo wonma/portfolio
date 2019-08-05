@@ -700,17 +700,33 @@ h1 {
             height: 60px; 
         }
 .site-header__logo-text {
+        display: none;
         font-size: 32px;
         margin-top: -1px;
         font-weight: 700;
         letter-spacing: -.5px;
         color: #fff;
     }
+@media (min-width:600px){
+.site-header__logo-text {
+            display: block
+    }
+	}
 .site-header__logo-text--black {
             color: #000;
             font-weight: 900;
             letter-spacing: -1px;
         }
+.site-header__logo-emblem-container {
+            margin-top: 4px;
+            -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+        }
+@media (min-width:600px){
+.site-header__logo-emblem-container {
+                display: none
+        }
+	}
 .site-header__menu-content {
         position: relative;
     }
@@ -1584,7 +1600,7 @@ button.slick-next {
     display: -webkit-box;
     display: flex;
     white-space: normal; 
-    overflow-x: scroll;
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
