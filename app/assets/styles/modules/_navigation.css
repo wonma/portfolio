@@ -11,6 +11,11 @@
         color: $grey-font;
         font-weight: 400;
         letter-spacing: .1px;
+        transition: color .15s ease-in-out 0s;
+
+        &:hover {
+            color: #101314;
+        }
     }
 
     &__item.active {
@@ -24,6 +29,11 @@
         font-weight: 400;
         opacity: .5;
         letter-spacing: .1px;
+        transition: opacity .15s ease-in-out 0s;
+        &:hover {
+            color: #fff;
+            opacity: 1;
+        }
     }
 
     &__item--darkbg.active {

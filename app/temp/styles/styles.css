@@ -502,7 +502,12 @@ h1 {
         color: rgb(150, 150, 150);
         font-weight: 400;
         letter-spacing: .1px;
+        -webkit-transition: color .15s ease-in-out 0s;
+        transition: color .15s ease-in-out 0s;
     }
+.primary-nav a:hover {
+            color: #101314;
+        }
 .primary-nav__item.active a {
             color: #101314;
         }
@@ -511,7 +516,13 @@ h1 {
         font-weight: 400;
         opacity: .5;
         letter-spacing: .1px;
+        -webkit-transition: opacity .15s ease-in-out 0s;
+        transition: opacity .15s ease-in-out 0s;
     }
+.primary-nav__item--darkbg a:hover {
+            color: #fff;
+            opacity: 1;
+        }
 .primary-nav__item--darkbg.active a {
             opacity: 1;
         }
