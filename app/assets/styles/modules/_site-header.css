@@ -49,6 +49,7 @@
     top: -90px;
     z-index: 110;
     /* border: 1px solid orchid; */
+    border-bottom: 1px solid #F1F2F6;
 }
 
 .hide-dynamic-header {

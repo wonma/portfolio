@@ -18,6 +18,14 @@
             max-width: 760px;
             margin-bottom: 50px;
         }
+
+        &--narrow {
+            @mixin atMedium {
+                margin: 0 auto;
+                max-width: 660px;
+                margin-bottom: 50px;
+            }
+        }
     }
 }
 
