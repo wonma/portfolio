@@ -70,6 +70,7 @@
         font-weight: 400;
         color: #252525;
         margin-bottom: 42px;
+
         @mixin atMedium {
             margin-bottom: 62px;
         }
@@ -97,13 +98,13 @@
     &__box-container  {
         /* padding-right: 20%; */
         width: 100%;
-        height: 260px;
+        height: 400px;
         display: flex;
         flex-direction: column;
 
-        & > p {
+        /* & > p {
             flex: 1 1 100%;
-        }
+        } */
 
         @mixin atMedium {
             /* padding-right: 20px; */
@@ -111,36 +112,37 @@
         }
     }
 
-    &__box-img {
-        margin-top: 30px;
-        /* border: 1px solid red; */
-        height: 350px;
+    &__box-info {
+        
+    }
 
+    &__box-img {
+        /* margin-top: 30px; */
+        order: -1;
+        width: auto;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
         &--1 {
             background-image: url('../../assets/images/visual-strategy_01.jpg');
-            background-size: 120% auto;
-            background-position: center center;
         }
 
         &--2 {
             background-image: url('../../assets/images/visual-strategy_02.jpg');
-            background-size: 120% auto;
-            background-position: center center;
         }
 
         &--3 {
             background-image: url('../../assets/images/visual-strategy_03.jpg');
-            background-size: 120% auto;
-            background-position: center center;
         }
     }
 
     &__box-title {
-        padding: 30px 10px 0 10px;
+        padding: 30px 10px 0 25px;
     }
 
     &__box-desc {
-        padding: 0 25px;
+        padding: 0 25px 30px 25px;
     }
 
     &__meta dt {
