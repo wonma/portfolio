@@ -1,30 +1,42 @@
 .nav-list {
+    width: 100vw;
+    margin-left: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
     position: relative;
     display: flex;
-    /* flex-wrap: wrap; */
     white-space: normal; 
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
 
+
     @mixin atSmall {
         white-space: normal;
     }
 
+    @mixin atMedium {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
     &__item {
         /* border: 1px solid #F1F2F6; */
-        margin-right: 4%;
+        margin-right: 2%;
         margin-bottom: 20px;
-        /* width: 200px; */
-        /* flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 48%; */
-
-        /*         
+                
         @mixin atMedium {
             margin-right: 2%;
-            flex-basis: 32%;
-        } */
+            flex-basis: 30%;
+        }
+    }
+
+    &__item:last-child {
+        padding-right: 32px;
+
+        @mixin atMedium {
+            padding-right: 0;
+        }
     }
 
     /* &__item:nth-child(even) {

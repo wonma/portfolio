@@ -1,7 +1,7 @@
 .project {
     &-section {
         margin-bottom: 90px;  /* 3 project-sections : intro, process, end */
-
+        overflow: hidden;
         &--full-image {
             background-image: url('../../assets/images/work_start_02_mine.jpg');
             background-size: cover;

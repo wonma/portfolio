@@ -1547,10 +1547,13 @@ button.slick-next {
 
 }
 .nav-list {
+    width: 100vw;
+    margin-left: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
     position: relative;
     display: -webkit-box;
     display: flex;
-    /* flex-wrap: wrap; */
     white-space: normal; 
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
@@ -1561,21 +1564,31 @@ button.slick-next {
         white-space: normal
 }
 	}
+@media (min-width:800px){
+.nav-list {
+        flex-wrap: wrap;
+        width: 100%
+}
+	}
 .nav-list__item {
         /* border: 1px solid #F1F2F6; */
-        margin-right: 4%;
+        margin-right: 2%;
         margin-bottom: 20px;
-        /* width: 200px; */
-        /* flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 48%; */
-
-        /*         
-        @mixin atMedium {
-            margin-right: 2%;
-            flex-basis: 32%;
-        } */
     }
+@media (min-width:800px){
+.nav-list__item {
+            margin-right: 2%;
+            flex-basis: 30%
+    }
+	}
+.nav-list__item:last-child {
+        padding-right: 32px;
+    }
+@media (min-width:800px){
+.nav-list__item:last-child {
+            padding-right: 0
+    }
+	}
 /* &__item:nth-child(even) {
         margin-right: 0;    
     } */
@@ -1627,9 +1640,9 @@ button.slick-next {
         text-align: center;
     }
 .project-section {
-        margin-bottom: 90px;
+        margin-bottom: 90px;  /* 3 project-sections : intro, process, end */
+        overflow: hidden;
     }
-/* 3 project-sections : intro, process, end */
 .project-section--full-image {
             background-image: url('../../assets/images/work_start_02_mine.jpg');
             background-size: cover;
