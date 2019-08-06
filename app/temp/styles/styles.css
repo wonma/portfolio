@@ -548,6 +548,11 @@ h1 {
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 /* backface-visibility: hidden; */
+@media (min-width:800px){
+.overlay-nav {
+        display: none
+}
+	}
 .overlay-nav--is-open {
         /* opacity: 1; */
         -webkit-transform: translate3d(0, 0, 0);
