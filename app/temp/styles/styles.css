@@ -561,7 +561,15 @@ h1 {
     }
 .overlay-nav__content {
         /* border: 1px solid red; */
+        height: 75vh;
         margin-top: 50px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+                justify-content: space-between;
     }
 /* Top */
 .overlay-nav__logo > .logo-emblem {
@@ -576,7 +584,7 @@ h1 {
     }
 /* menu */
 .overlay-nav__list {
-        margin-top: 200px;
+        /* margin-top: 200px; */
     }
 .overlay-nav__item {
         font-size: 24px;
@@ -615,11 +623,16 @@ h1 {
     }
 /* bottom part */
 .overlay-nav__bottom {
-        margin-top: 50px;
+        /* margin-top: 50px; */
+        font-size: 14px;
     }
 .overlay-nav__cta {
+        font-size: 16px;
         padding: 15px 0;
     }
+.overlay-nav__cta a {
+            color: #5938FF;
+        }
 .overlay-nav__contact {
         padding: 15px 0;
         border-top: 1px solid #080808;
@@ -630,6 +643,10 @@ h1 {
         -webkit-box-pack: justify;
                 justify-content: space-between;
     }
+.sns-item {
+    color: rgb(150, 150, 150);
+}
+.sns-item:first-child{ margin-right: 10px; }
 .hamburger, .icon__close {
     width: 40px;
     height: 40px;
