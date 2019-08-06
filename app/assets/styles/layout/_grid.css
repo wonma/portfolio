@@ -5,6 +5,10 @@
         padding: 40px 0;
     }
 
+    &__mtb--small {
+        padding: 5px 0;
+    }
+
     &__border {
         border-bottom: 1px solid #EFEFEF;
     }

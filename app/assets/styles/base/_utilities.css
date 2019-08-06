@@ -45,3 +45,7 @@
 .move-upwards {
     transform: translateY(-40px);
 }
+
+.js-no-scroll {
+    overflow: hidden;
+}

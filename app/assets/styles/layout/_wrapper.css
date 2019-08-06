@@ -5,13 +5,11 @@
     margin: 0 auto;
     padding: 0 32px;
 
-    &--overlay {
-        position: relative;
-    }
     &--dynamic-header {
         /* background-color: #f8f6fe;  */
         /* border-bottom: 1px solid #f0f0f0; */
     }
+    
     &--centered-desc {
         @mixin atMedium {
             margin: 0 auto;

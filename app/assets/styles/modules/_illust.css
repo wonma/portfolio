@@ -10,12 +10,14 @@
     &-two-circles {
         display: flex;
         justify-content: center;
-        margin-left: -30px;
+        /* margin-left: -30px; */
         margin-bottom: 40px;
 
         &__left {
-            width: 200px;
-            height: 200px;
+            /* width: 200px;
+            height: 200px; */
+            width: 10rem;
+            height: 10rem;
             border-radius: 50%;
 
             background-image: url('../../assets/images/img_woman.jpg');

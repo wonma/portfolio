@@ -51,18 +51,74 @@
     /* opacity: 0; */
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 58, 62, 1);
+    background-color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 150;
     transform: translate3d(-100%, 0, 0);
-
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 
     &--is-open {
         /* opacity: 1; */
         transform: translate3d(0, 0, 0);
+    }
+
+    &__container {
+        position: relative; 
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+    }
+
+    &__content {
+        /* border: 1px solid red; */
+        margin-top: 50px;
+    }
+
+    /* Top */
+    &__logo {
+        & > .logo-emblem {
+            transform: scale(1.4) translateX(3px);
+        }
+    }
+
+    &__copywords {
+        width: 200px;
+        color: $grey-font;
+        margin-top: 20px;
+        line-height: 1.4;
+    }
+
+    /* menu */
+    &__list {
+        margin-top: 200px;
+    }
+
+    &__item {
+        font-size: 24px;
+        padding: 5px 0;
+    }
+
+    &__link {
+        color: #080808;
+    }
+
+    /* bottom part */
+    &__bottom {
+        margin-top: 100px;
+    }
+
+    &__cta {
+        padding: 15px 0;
+    }
+
+    &__contact {
+        padding: 15px 0;
+        border-top: 1px solid #080808;
+
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -139,11 +195,11 @@
 
         &::before {
 			transform: rotate(45deg) scaleX(1.2) translateX(0px) translateY(-2px);
-            background-color: #fff;
+            background-color: #080808;
         }
 		&::after {
 			transform: rotate(-45deg) scaleX(1.2) translateX(-4px) translateY(4px);
-            background-color: #fff;
+            background-color: #080808;
         }
 
         &--is-on{
@@ -165,7 +221,7 @@
 .secondary-nav { /* nav */
     
     position: sticky;
-    background-color: #fff;
+    background-color: #080808;
     z-index: 100;
     transition: all .35s ease-out;
     /* top: 102px; */

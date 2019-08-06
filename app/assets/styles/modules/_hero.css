@@ -50,7 +50,7 @@
             position: absolute;
             z-index: 1;
             width: 100%;
-            margin-top: 150px;
+            margin-top: 180px;
 
             @mixin atMedium {
                 margin-top: 200px;

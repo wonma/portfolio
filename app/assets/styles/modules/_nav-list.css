@@ -56,18 +56,18 @@
     &__active {
         &.nav-list__thum {
             border: 1px solid #8149ff;
+
             &::before {
-                content:'';
+                content:'You are here';
                 position: absolute;
-                bottom: 2px;
-                right: 2px;
+                top: -20px;
+                left: 40px;
                 color: #8149ff;
                 font-size: 13px;
                 /* padding: 10px; */
-                border-radius: 4px;
-                width:4px;
+                width:100px;
                 height:4px;
-                background-color: #6624ff;
+                /* background-color: #6624ff; */
             }    
         }
     }
@@ -79,11 +79,11 @@
         height: 80px;
         border: 1px solid #F1F2F6;
 
-            background-image: url('../../assets/images/work_hero_01_mine.jpg');
-            background-size: 150%;
-            background-repeat: no-repeat;
-            background-position: center center;
-            position: relative;
+        background-image: url('../../assets/images/work_hero_01_mine.jpg');
+        background-size: 150%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
     }
 
     &__title {

@@ -18,6 +18,7 @@ h1 {
     color: #303030;
     letter-spacing: .3px;
     font-weight: 400; 
+    margin-top: 20px;
 }
 
 .p--desc {  /* paragraph - description */
