@@ -535,7 +535,8 @@ h1 {
 .overlay-nav {
     /* opacity: 0; */
     width: 100%;
-    height: 100%;
+    height: 200%;
+    overflow: hidden;
     background-color: rgba(255, 255, 255, 1);
     position: fixed;
     top: 0;
@@ -546,6 +547,7 @@ h1 {
     -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
+/* backface-visibility: hidden; */
 .overlay-nav--is-open {
         /* opacity: 1; */
         -webkit-transform: translate3d(0, 0, 0);
@@ -579,13 +581,41 @@ h1 {
 .overlay-nav__item {
         font-size: 24px;
         padding: 5px 0;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 3rem, 0);
+                transform: translate3d(0, 3rem, 0);
     }
+.overlay-nav--is-open .overlay-nav__item {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+                    transform: translate3d(0, 0, 0);
+            -webkit-transition-property: opacity, -webkit-transform;
+            transition-property: opacity, -webkit-transform;
+            transition-property: opacity, transform;
+            transition-property: opacity, transform, -webkit-transform;
+            -webkit-transition-duration: 1s, 1s;
+                    transition-duration: 1s, 1s;
+            -webkit-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+                    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);            
+        }
+.overlay-nav__item:nth-child(1) {
+            -webkit-transition-delay: 0.3s;
+                    transition-delay: 0.3s;
+        }
+.overlay-nav__item:nth-child(2) {
+            -webkit-transition-delay: 0.4s;
+                    transition-delay: 0.4s;
+        }
+.overlay-nav__item:nth-child(3) {
+            -webkit-transition-delay: 0.5s;
+                    transition-delay: 0.5s;
+        }
 .overlay-nav__link {
         color: #080808;
     }
 /* bottom part */
 .overlay-nav__bottom {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 .overlay-nav__cta {
         padding: 15px 0;
