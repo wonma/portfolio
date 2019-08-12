@@ -800,22 +800,18 @@ h1 {
             top: 20px;
         }
 .secondary-nav { /* nav */
-    
     position: -webkit-sticky;
-    
     position: sticky;
-    background-color: #080808;
+    background-color: rgba(255, 255, 255, .1);
     z-index: 100;
     -webkit-transition: all .35s ease-out;
     transition: all .35s ease-out;
-    /* top: 102px; */
-    top:0px;
-
-    /* margin-left: 80px; */
+    top: 0px;
     letter-spacing: 1px;
-    border-bottom: 1px solid #F0EEEE;
+    border-top: 1px solid #F0EEEE;
 
 }
+/* border-bottom: 1px solid #F0EEEE; */
 .secondary-nav-container {
         max-width: 1024px;
         margin:0 auto;
@@ -826,9 +822,6 @@ h1 {
         -webkit-box-pack: start;
                 justify-content: flex-start;
         padding: 28px 32px 32px 32px;
-    }
-.secondary-nav__item { /* li */
-
     }
 .secondary-nav__link { /* a */
         color: rgba(0,0,0, .3);
@@ -1070,7 +1063,7 @@ video {
 
 }
 .hero--subpage {
-        height: 446px;
+        height: 500px;
     }
 .page-work--1 .hero {
         background-image: url('../../assets/images/work_hero_01_mine.jpg');
@@ -1084,6 +1077,36 @@ video {
 .page-work--1 .hero {
             background-attachment: fixed;
             -webkit-background-attachment: fixed
+    }
+	}
+.hero::before {
+        font-size: 90px;
+        position: fixed;
+        height: 600px;
+        z-index: -1;
+        right: 8px;
+        top: 100px;
+        color: rgb(255, 255, 255);
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        -webkit-text-orientation: sideways;
+                text-orientation: sideways;
+        opacity: .6;
+        text-shadow: 
+            rgb(230, 230, 230) 0px 0px 0px, 
+            rgb(230, 230, 230) 0px 2px 0px, 
+            rgb(230, 230, 230) 0px -2px 0px, 
+            rgb(230, 230, 230) 2px 0px 0px, 
+            rgb(230, 230, 230) 2px 2px 0px, 
+            rgb(230, 230, 230) 2px -2px 0px, 
+            rgb(230, 230, 230) -2px 0px 0px, 
+            rgb(230, 230, 230) -2px 2px 0px, 
+            rgb(230, 230, 230) -2px -2px 0px;
+    }
+@media (min-width:800px){
+.hero::before {
+            right: 200px;
     }
 	}
 .hero::after {
@@ -1139,9 +1162,9 @@ video {
             margin-top: 20px;
             font-size: 38px;
             letter-spacing: 5pt;
-            font-weight: 800;
-            color: #5030B1;
+            font-weight: 700;
         }
+/* color: $primaryCol; */
 @media (min-width:600px){
 .hero__heading--concept {
                 font-size: 85px;
@@ -1156,7 +1179,7 @@ video {
         }
 @media (min-width:800px){
 .hero__heading--keywords {
-                font-size: 36px
+                /* font-size: 32px; */
         }
 	}
 .hero__heading--main {
@@ -1245,6 +1268,9 @@ video {
 .hero-slider__img--03 {
                 background-image: url('../../assets/images/hero_03.jpg');
             }
+.p-herself .hero::before {
+        content:'DESIGNER';
+}
 .section {
     padding-top: 80px;
 }
@@ -1307,33 +1333,8 @@ video {
     }
 	}
 .section__myself {
-        position: relative;
+
     }
-.section__myself::before {
-            content:'UNDERSTAND';
-            font-size: 90px;
-            position: fixed;
-            z-index: -1;
-            right: 300px;
-            top: 80px;
-            color: rgb(255, 255, 255);
-            writing-mode: vertical-rl;
-            -webkit-writing-mode: vertical-rl;
-            -ms-writing-mode: tb-rl;
-            -webkit-text-orientation: sideways;
-                    text-orientation: sideways;
-            opacity: .4;
-            text-shadow: 
-                rgb(230, 230, 230) 0px 0px 0px, 
-                rgb(230, 230, 230) 0px 2px 0px, 
-                rgb(230, 230, 230) 0px -2px 0px, 
-                rgb(230, 230, 230) 2px 0px 0px, 
-                rgb(230, 230, 230) 2px 2px 0px, 
-                rgb(230, 230, 230) 2px -2px 0px, 
-                rgb(230, 230, 230) -2px 0px 0px, 
-                rgb(230, 230, 230) -2px 2px 0px, 
-                rgb(230, 230, 230) -2px -2px 0px;
-        }
 /************** Each Block *************/
 .section__header {  /* wrapper A-level */
         padding: 0 32px;

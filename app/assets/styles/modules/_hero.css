@@ -60,7 +60,7 @@ video {
     overflow: hidden;
 
     &--subpage {
-        height: 446px;
+        height: 500px;
     }
 
     .page-work--1 & {
@@ -75,6 +75,34 @@ video {
             background-attachment: fixed;
             -webkit-background-attachment: fixed;
         }
+    }
+    
+    &::before {
+        font-size: 90px;
+        position: fixed;
+        height: 600px;
+        z-index: -1;
+        right: 8px;
+        @mixin atMedium {
+            right: 200px;
+        }
+        top: 100px;
+        color: rgb(255, 255, 255);
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        text-orientation: sideways;
+        opacity: .6;
+        text-shadow: 
+            rgb(230, 230, 230) 0px 0px 0px, 
+            rgb(230, 230, 230) 0px 2px 0px, 
+            rgb(230, 230, 230) 0px -2px 0px, 
+            rgb(230, 230, 230) 2px 0px 0px, 
+            rgb(230, 230, 230) 2px 2px 0px, 
+            rgb(230, 230, 230) 2px -2px 0px, 
+            rgb(230, 230, 230) -2px 0px 0px, 
+            rgb(230, 230, 230) -2px 2px 0px, 
+            rgb(230, 230, 230) -2px -2px 0px;
     }
 
     &::after {
@@ -132,8 +160,8 @@ video {
             margin-top: 20px;
             font-size: 38px;
             letter-spacing: 5pt;
-            font-weight: 800;
-            color: $primaryCol;
+            font-weight: 700;
+            /* color: $primaryCol; */
 
             @mixin atSmall {
                 font-size: 85px;
@@ -147,7 +175,7 @@ video {
             letter-spacing: 1.4px;
             font-weight: 500;
             @mixin atMedium {
-                font-size: 36px;
+                /* font-size: 32px; */
             }
         }
 
@@ -224,4 +252,8 @@ video {
         }
     }
 
+}
+
+.p-herself .hero::before {
+        content:'DESIGNER';
 }

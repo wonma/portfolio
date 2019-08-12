@@ -59,31 +59,7 @@
     }
 
     &__myself {
-        position: relative;
-        &::before {
-            content:'UNDERSTAND';
-            font-size: 90px;
-            position: fixed;
-            z-index: -1;
-            right: 300px;
-            top: 80px;
-            color: rgb(255, 255, 255);
-            writing-mode: vertical-rl;
-            -webkit-writing-mode: vertical-rl;
-            -ms-writing-mode: tb-rl;
-            text-orientation: sideways;
-            opacity: .4;
-            text-shadow: 
-                rgb(230, 230, 230) 0px 0px 0px, 
-                rgb(230, 230, 230) 0px 2px 0px, 
-                rgb(230, 230, 230) 0px -2px 0px, 
-                rgb(230, 230, 230) 2px 0px 0px, 
-                rgb(230, 230, 230) 2px 2px 0px, 
-                rgb(230, 230, 230) 2px -2px 0px, 
-                rgb(230, 230, 230) -2px 0px 0px, 
-                rgb(230, 230, 230) -2px 2px 0px, 
-                rgb(230, 230, 230) -2px -2px 0px;
-        }
+
     }
 
     /************** Each Block *************/
