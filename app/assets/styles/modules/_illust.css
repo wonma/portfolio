@@ -1,6 +1,5 @@
 .illust {
     &__container {
-        border: 1px solid red;
         display: flex;
         position: relative;
         justify-content: center;
@@ -56,16 +55,20 @@
 
     &__circle {
         position: relative;
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.5;
         text-align: center;
         border-radius: 50%;
-        border: 1px solid grey;
-        width: 8rem;
-        height: 8rem;
+        /* border: 1px solid $primaryCol-lightest; */
+        box-shadow: rgba(179, 169, 194, .15) 4px 10px 40px;
+        width: 30vw;
+        height: 30vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2rem;
+        padding: 20px;
+        flex-grow: 0;
+        flex-shrink: 0;
         
         @mixin atMedium {
             font-size: 16px;
@@ -109,11 +112,11 @@
         }
 
         &--center {
-            border-color: $primaryCol-point;
+            border-color: $primaryCol-lightest;
             color: $primaryCol-point;
             opacity: 0;
             transition: opacity .5s ease-out;
-
+            /* background-color: #fff; */
             .is-in-view & {
                 opacity: 1;
             }

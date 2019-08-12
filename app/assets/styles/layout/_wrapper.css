@@ -5,6 +5,12 @@
     margin: 0 auto;
     padding: 0 32px;
 
+    &--extended {
+        max-width: 1540px;
+        margin: 0 auto;
+        padding: 0 32px;    
+    }
+
     &--dynamic-header {
         /* background-color: #f8f6fe;  */
         /* border-bottom: 1px solid #f0f0f0; */

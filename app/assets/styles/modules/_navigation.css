@@ -77,9 +77,8 @@
     }
 
     &__content {
-        /* border: 1px solid red; */
-        height: 75vh;
-        margin-top: 50px;
+        height: 80vh;
+        margin-top: 36px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -105,7 +104,6 @@
     }
 
     &__item {
-        font-size: 24px;
         padding: 5px 0;
         opacity: 0;
         transform: translate3d(0, 3rem, 0);
@@ -131,6 +129,8 @@
 
     &__link {
         color: #080808;
+        font-size: 34px;
+        border-bottom: 2px solid #080808;
     }
 
     /* bottom part */
@@ -172,6 +172,7 @@
     }
 
     &--center, &::after, &::before {
+        transform: translate(5px, 10px);
         width: 28px;
         height: 2px;
         background-color: #fff;
@@ -201,8 +202,7 @@
 }
 
 .hamburger {
-    top: 12px;
-    left: 15px;
+    left: 6px;
     position: relative;
 
     @mixin atMedium {
@@ -223,7 +223,7 @@
 }
 
 .icon__close {
-    top: 50px;
+    top: 30px;
     right: 16px;
     position: absolute;
     z-index: 200;

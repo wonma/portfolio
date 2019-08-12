@@ -1,0 +1,12 @@
+.text-box-by-image {
+    background-color: $primaryCol;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__text {
+        color: #fff;
+        line-height: 1.8;
+    }
+}
+

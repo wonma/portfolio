@@ -7,6 +7,10 @@
 
     &__mtb--small {
         padding: 5px 0;
+
+        @mixin atMedium {
+            padding: 15px 0;
+        }
     }
 
     &__border {

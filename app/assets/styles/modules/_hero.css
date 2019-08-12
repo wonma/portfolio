@@ -1,7 +1,61 @@
+.video-container {
+    width: 50%;
+}
+
+.clipping-paths {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+video {
+    clip-path: url(#clip-00);
+}
+
+.index-scroll {
+    display: block;
+    position: absolute;
+    padding: 0 32px;
+    bottom: 15px;
+    left: -65px;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+    text-orientation: sideways;
+    letter-spacing: 0.2em;
+    color: #000;
+    transition: opacity 0.4s linear;
+
+    &__arrow {
+        content: '';
+        width: 1px;
+        height: 40px;
+        background-color: #000;
+        position: absolute;
+        left: 48%;
+        top: -120%;
+        animation: fade 2s cubic-bezier(0.39, 0.575, 0.565, 1) 0s infinite;
+        /* background: url() 0 0 no-repeat; */
+        background-size: cover;
+    }
+
+    &__arrow::before {
+        content: '';
+        width: 1px;
+        height: 10px;
+        /* animation: fade 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0s infinite; */
+        background-color: #000;
+        /* transform: rotate(45deg); */
+        position: absolute;
+        left: 4px;
+        bottom: 0px;
+    }
+}
+
 .hero {
     position: relative;
-    color: #fff;
-    /* text-align: center; */
+    color: #080808;
     height: 646px;
     overflow: hidden;
 
@@ -31,9 +85,8 @@
         left: 0;
         right: 0;
         bottom: 0;
-        /* background: linear-gradient(to top, rgba(125, 53, 214, 0.90) 0%, rgba(70, 23, 171, 0.90) 100%) */
-        background: linear-gradient(to right, rgba(20, 0, 218, 0.83) 0%, rgba(116, 20, 204, 0.79) 100%);
-        background: -webkit-linear-gradient(to right, rgba(20, 0, 218, 0.83) 0%, rgba(116, 20, 204, 0.79) 100%);
+        /* background: linear-gradient(to right, rgba(20, 0, 218, 0.83) 0%, rgba(116, 20, 204, 0.79) 100%);
+        background: -webkit-linear-gradient(to right, rgba(20, 0, 218, 0.83) 0%, rgba(116, 20, 204, 0.79) 100%); */
 
         .page-myself & {
             background: linear-gradient(to bottom, rgba(#4826B9, 1) 0%, rgba(#B92F8B, 1) 100%);
@@ -56,32 +109,46 @@
                 margin-top: 200px;
             }
 
+        &-container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 32px;
+
+            & > span {
+                display: block;
+            }
+        }
+
         &--intro {
             font-size: 16px;
             letter-spacing: 1.8px;
             width: 240px;
-            color: rgba(255, 255, 255, .9);
+            /* color: rgba(255, 255, 255, .9); */
             /* margin: 0 auto; */
             line-height: 1.6;
         }
 
         &--concept {
             margin-top: 20px;
-            font-size: 50px;
+            font-size: 38px;
             letter-spacing: 5pt;
-            font-weight: 700;
+            font-weight: 800;
+            color: $primaryCol;
 
             @mixin atSmall {
-                font-size: 65px;
-                letter-spacing: 6px;
+                font-size: 85px;
+                letter-spacing: 10px;
             }
         }
 
         &--keywords {
             margin-top: 20px;
-            font-size: 16px;
+            font-size: 26px;
             letter-spacing: 1.4px;
-            font-weight: 400;
+            font-weight: 500;
+            @mixin atMedium {
+                font-size: 36px;
+            }
         }
 
         &--main {
@@ -102,17 +169,44 @@
     }
 
     &-slider {
+        position: absolute;
+        top: 64%;
+        left: 32px;
+        width: 300px;
+        height: 330px;
+        clip-path: polygon(
+            1% 9%, 20% 9%, 
+            30% 45%, 
+            40% 9%, 60% 9%, 
+            70% 45%, 
+            80% 9%, 100% 9%, 
+            80% 70%, 60% 70%, 
+            50% 45%, 
+            40% 70%, 19% 70%
+        );
+
+        @mixin atMedium {
+            top: 20%;
+            /* left: none; */
+            left: 50%;
+            width: 500px;
+            height: 550px;
+        }
+
         &__img {
-            width: 100%;
-            height: 646px;
+            width: auto;
+            height: 400px;
+            display: block;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            position: relative;
             opacity: 0.5;
             transition: transform 10s linear, opacity 2s linear;
 
-            /* &[aria-hidden="false"] {
-            } */
+            @mixin atMedium {
+                height: 400px;    
+            }
             .slick-active & {
                                 opacity: 1;
 

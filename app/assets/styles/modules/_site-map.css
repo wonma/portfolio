@@ -1,28 +1,12 @@
 .site-map {
     display: flex;
-    flex-direction: column;    /* border: 1px solid yellow; */
-    /* width: 00px; */
+    flex-direction: column;
 
-    @mixin atMedium {
-        flex-direction: row;
-    }
-
-    &__list { /* <ul> */
-        flex: 1; 
-        margin-bottom: 20px;
-        &-title { 
-            color: $secondaryCol-lighter;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-
-        &-item { /* <li> */
-            margin-bottom: 10px;
-        }
-
-        &-link { /* <a> */
-            color: rgba(#fff, .9);
-        }
-
+    &__link {
+        display: inline-block;
+        color: #fff;
+        font-size: 24px;
+        border-bottom: 2px solid #fff;
+        margin-bottom: 10px;
     }
 }
