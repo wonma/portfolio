@@ -60,7 +60,7 @@ video {
     overflow: hidden;
 
     &--subpage {
-        height: 500px;
+        height: 646px;
     }
 
     .page-work--1 & {
@@ -82,9 +82,9 @@ video {
         position: fixed;
         height: 600px;
         z-index: -1;
-        right: 8px;
+        right: 10px;
         @mixin atMedium {
-            right: 200px;
+            right: 250px;
         }
         top: 100px;
         color: rgb(255, 255, 255);
@@ -92,7 +92,7 @@ video {
         -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
         text-orientation: sideways;
-        opacity: .6;
+        opacity: .4;
         text-shadow: 
             rgb(230, 230, 230) 0px 0px 0px, 
             rgb(230, 230, 230) 0px 2px 0px, 
@@ -134,7 +134,7 @@ video {
             margin-top: 180px;
 
             @mixin atMedium {
-                margin-top: 200px;
+                margin-top: 170px;
             }
 
         &-container {
@@ -158,32 +158,52 @@ video {
 
         &--concept {
             margin-top: 20px;
-            font-size: 38px;
-            letter-spacing: 5pt;
+            font-size: 50px;
+            letter-spacing: -1px;
             font-weight: 700;
-            /* color: $primaryCol; */
+            color: $primaryCol;
+            width: 200px;
+            line-height: 1.1;
 
             @mixin atSmall {
-                font-size: 85px;
-                letter-spacing: 10px;
+                font-family: aktiv-grotesk,Helvetica Neue,-apple-system,BlinkMacSystemFont, Segoe UI,Roboto,Arial,Noto Sans,sans-serif;
+                width: 100%;
+                font-size: 110px;
+                font-weight: 500;
+                letter-spacing: -1px;
             }
         }
 
         &--keywords {
             margin-top: 20px;
-            font-size: 26px;
-            letter-spacing: 1.4px;
+            font-size: 18px;
+            width: 300px;
+            letter-spacing: .5px;
             font-weight: 500;
+            line-height: 1.6;
+
             @mixin atMedium {
-                /* font-size: 32px; */
+                font-size: 24px;
+                width: 400px;
+                margin-left: 5px;
             }
         }
 
         &--main {
             margin-top: 20px;
             font-size: 50px;
+            letter-spacing: -1.5px;
+            font-weight: 700;
+            color: $primaryCol;
+            width: 300px;
+            line-height: 1.1;
+
             @mixin atSmall {
-                font-size: 60px;
+                font-family: aktiv-grotesk, Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, Noto Sans, sans-serif;
+                width: 100%;
+                font-size: 80px;
+                font-weight: 500;
+                letter-spacing: -2px;
             }
         }
 
@@ -214,11 +234,11 @@ video {
         );
 
         @mixin atMedium {
-            top: 20%;
+            top: 25%;
             /* left: none; */
-            left: 50%;
-            width: 500px;
-            height: 550px;
+            left: 55%;
+            width: 400px;
+            height: 450px;
         }
 
         &__img {
@@ -254,6 +274,10 @@ video {
 
 }
 
+.hero::before {
+        content:'UNDERSTAND';
+}
+
 .p-herself .hero::before {
-        content:'DESIGNER';
+        content:'UX DESIGNER';
 }

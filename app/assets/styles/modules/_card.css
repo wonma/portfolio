@@ -54,11 +54,11 @@
     &__view {
         display: block;
         text-transform: uppercase;
-        color: #A484FF;
+        color: $primaryCol-point;
         width: 50px;
-        letter-spacing: 1px;
+        letter-spacing: .8px;
         height: 30px;
-        border-bottom: 1px solid #A484FF;
+        border-bottom: 1px solid $primaryCol-point;
     }
 
     &__title {

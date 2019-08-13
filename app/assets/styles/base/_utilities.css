@@ -38,6 +38,10 @@
     background-color: #f8f5ff;
 }
 
+.bg--w {
+    background-color: #fff;
+}
+
 .no-mt {
     margin-top: 0;
 }
@@ -48,6 +52,10 @@
 
 .js-no-scroll {
     overflow: hidden;
+}
+
+.ph-small {
+    padding: 0 32px;
 }
 
 div#page {

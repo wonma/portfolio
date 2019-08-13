@@ -259,7 +259,7 @@
 
 .secondary-nav { /* nav */
     position: sticky;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 100;
     transition: all .35s ease-out;
     top: 0px;
@@ -270,6 +270,10 @@
     &-container {
         max-width: 1024px;
         margin:0 auto;
+
+        @mixin atMedium {
+            padding: 0 32px;
+        }
     }
 
 

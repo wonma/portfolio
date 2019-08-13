@@ -7,6 +7,41 @@
         color: $primaryCol-point;
     }
 
+    &--underline {
+        color: #080808;
+        font-size: 24px;
+        padding: 4px 0;
+        margin-top: 10px;
+        letter-spacing: -.3px;
+        border-bottom: 2px solid #080808;
+        position: relative;
+        
+        @mixin atMedium {
+            margin-top: 30px;
+        }
+
+        /* &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: #080808;
+            right: 0px;
+            top: 50%;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 2px;
+            transform: rotate(45deg);
+            background-color: #080808;
+            right: 0px;
+            top: 45%;   
+        } */
+    }
+
     &--accent {
         color: #fff;
         background-color: #412496;

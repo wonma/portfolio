@@ -1,0 +1,25 @@
+.bullet-list {
+    /* height: 220px; */
+    &__item {
+        margin-bottom: 15px;
+        color: $grey-font-dark;
+        font-size: 16px;
+        padding-left: 18px;
+        position: relative;
+        line-height: 1.5;
+        &:last-child {
+            margin-bottom: 0; 
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            background-color: $primaryCol-point;
+            width: 3px;
+            height: 3px;
+            transform: translateY(-50%) scaleX(.8) rotate(135deg);
+        }
+    }
+}
