@@ -1,4 +1,4 @@
-.cards {
+/* .cards {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -11,12 +11,12 @@
         justify-content: space-between;
     }
 
-    &__card { /* a */
+    &__card { 
         flex-basis: 100%;
         display: block;
         color: #080808;
     }
-}
+} */
 
 .card {
 
@@ -27,6 +27,10 @@
         width: 100%;
         height: 300px;
         object-fit: cover;
+
+        &--extended {
+            height: 400px;
+        }
     }
 
     &__last {
@@ -41,7 +45,7 @@
         justify-content: space-between;
         align-items: flex-end;
         margin-top: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
 
     &__info {
@@ -52,7 +56,7 @@
     }
 
     &__view {
-        display: block;
+        display: none;
         text-transform: uppercase;
         color: $primaryCol-point;
         width: 50px;
@@ -60,6 +64,7 @@
         height: 30px;
         border-bottom: 1px solid $primaryCol-point;
     }
+
 
     &__title {
         /* margin-top: 10px; */

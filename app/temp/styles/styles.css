@@ -1906,31 +1906,25 @@ video {
 .circles__img {
         width: 50%;
     }
-.cards {
+/* .cards {
     margin-top: 30px;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
     flex-wrap: wrap;
     max-width: 500px;
-}
-@media (min-width:600px){
-.cards {
+
+    @mixin atSmall {
         max-width: 100%;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-                justify-content: space-between
-}
-	}
-.cards__card { /* a */
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__card { 
         flex-basis: 100%;
         display: block;
         color: #080808;
     }
+} */
 .card {
 
     display: -webkit-box;
@@ -1946,6 +1940,9 @@ video {
         -o-object-fit: cover;
            object-fit: cover;
     }
+.card__img--extended {
+            height: 400px;
+        }
 .card__last {
         border: none;
         margin-bottom: 0;
@@ -1960,7 +1957,7 @@ video {
         -webkit-box-align: end;
                 align-items: flex-end;
         margin-top: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
 .card__info {
         padding:0 0px;
@@ -1972,7 +1969,7 @@ video {
         /* border: 1px solid pink; */
     }
 .card__view {
-        display: block;
+        display: none;
         text-transform: uppercase;
         color: #9028EF;
         width: 50px;
