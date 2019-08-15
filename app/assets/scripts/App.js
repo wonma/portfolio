@@ -9,6 +9,7 @@ import ScrollToID from './modules/ScrollToID';
 import SectionWaypoints from './modules/SectionWaypoints';
 import DoubleSlider from './modules/DoubleSlider';
 import PageLoader from './modules/PageLoader';
+import QuickNav from './modules/QuickNav';
 
 // Instantiate a new object using our modules/classes
 var heroSlider = new HeroSlider();
@@ -17,3 +18,4 @@ var scrollToID = new ScrollToID();
 var sectionWaypoints = new SectionWaypoints();
 var doubleSlider = new DoubleSlider();
 var pageLoader = new PageLoader();
+var quickNav = new QuickNav();

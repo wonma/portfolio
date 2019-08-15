@@ -1,6 +1,6 @@
 .section {  
     padding-top: 80px; /* General sections for all pages */
-
+    overflow: hidden;
     &__banner {
         text-align: center;
         @mixin atMedium {

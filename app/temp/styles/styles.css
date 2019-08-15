@@ -658,7 +658,7 @@ h1 {
         position: relative; 
         width: 100%;
         height: 100%;
-        border: 1px solid #fff;
+        /* border: 1px solid #fff; */
     }
 .overlay-nav__content {
         height: 80vh;
@@ -879,6 +879,33 @@ h1 {
                 width: 99%;
                 border-bottom: 2px solid rgba(144,40,239, .7);
             }
+/* Quick Nav Variation */
+.overlay-nav--quick-nav {
+    display: block;
+    background-color: #5030B1;
+    /* opacity: 0; */
+    width: 100%;
+    height: 200%;
+    overflow: hidden;
+    /* background-color: rgba(255, 255, 255, 1); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.overlay-nav--quick-nav.quick-nav--is-open {
+    display: block;
+    /* opacity: 1; */
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.quickNavBtn:hover {
+    cursor: pointer;
+}
 .site-header {
     position: relative;
     width: 100%;
@@ -1357,9 +1384,9 @@ video {
         content:'UX DESIGNER';
 }
 .section {  
-    padding-top: 80px;
+    padding-top: 80px; /* General sections for all pages */
+    overflow: hidden;
 }
-/* General sections for all pages */
 .section__banner {
         text-align: center;
         color: #fff;
