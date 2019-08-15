@@ -38,6 +38,10 @@
     padding: 30px;
 }
 
+.pt-none {
+    padding-top: 0;
+}
+
 .bg--light {
     background-color: #f8f5ff;
 }
