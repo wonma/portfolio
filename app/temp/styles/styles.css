@@ -1356,7 +1356,7 @@ video {
 .p-herself .hero::before {
         content:'UX DESIGNER';
 }
-.section {
+.section {  
     padding-top: 80px;
 }
 /* General sections for all pages */
