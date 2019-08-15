@@ -1,133 +1,83 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>UX designer Wonmi Kwon</title>
+    <title>UX designer Wonmi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./temp/styles/styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div id="black-home-overlay"></div>
-    <header class="site-header site-header--standard site-header--no-bg">
-        <div class="container--extended">
-            <div class="site-header__content">
-                <div class="site-header__logo">
-                    <div class="site-header__logo-text site-header__logo-text--black">wonmi</div>
-                    <div class="site-header__logo-emblem-container">
-                        <img src="./assets/images/icons/logo-emblem--bl.svg" alt="logo emblem" class="logo-emblem">
+    <div id="page">
+        <header class="site-header site-header--standard site-header--no-bg">
+            <div class="container--extended">
+                <div class="site-header__content">
+                    <div class="site-header__logo">
+                        <div class="site-header__logo-text site-header__logo-text--black">wonmi</div>
+                        <div class="site-header__logo-emblem-container">
+                            <img src="./assets/images/icons/logo-emblem--bl.svg" alt="logo emblem" class="logo-emblem">
+                        </div>
                     </div>
-                </div>
-                <div class="site-header__pagination">
-                    <span>Part of
-                        <a href="#">Design</a>
-                    </span>
-                </div>
-                <div class="site-header__menu-content">
-                    <nav class="primary-nav">
-                        <ul class="primary-nav__list">
-                            <li class="primary-nav__item">
-                                <a href="#">herself</a>
-                            </li>
-                            <li class="primary-nav__item">
-                                <!-- add class 'active' here -->
-                                <a href="#">design</a>
-                            </li>
-                            <li class="primary-nav__item">
-                                <a href="#">development</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="hamburger hamburger--black">
-                        <div class="hamburger--center"></div>
+                    <div class="site-header__pagination">
+                        <span>Part of
+                            <a href="#">Design</a>
+                        </span>
+                    </div>
+                    <div class="site-header__menu-content">
+                        <nav class="primary-nav">
+                            <ul class="primary-nav__list">
+                                <li class="primary-nav__item">
+                                    <a href="#">herself</a>
+                                </li>
+                                <li class="primary-nav__item">
+                                    <!-- add class 'active' here -->
+                                    <a href="#">design</a>
+                                </li>
+                                <li class="primary-nav__item">
+                                    <a href="#">development</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="hamburger hamburger--black">
+                            <div class="hamburger--center"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="site-content p-herself">
-        <!-- Hero -->
-        <div class="hero hero--subpage">
-            <h1 class="hero__heading">
-                <div class="container">
-                    <p class="hero__heading--intro">HERSELF</p>
-                    <p class="hero__heading--main">Hello, I'm Wonmi Kwon.</p>
-                    <p class="hero__heading--sub">
-                        I've been reborn as a designer through constant reflection on myself.
-                        I spent my 20's thinking of who I am and how I want to live.
-                        I chose the path people don't take, and I'm standing here proudly, with a big dream, as a designer.
-                    </p>
+        </header>
+        
+        <main class="site-content">
+            <div class="hero">
+                <h1 class="hero__heading">
+                    <div class="hero__heading-container">
+                        <!-- <span class="hero__heading--intro">UX/UI DESIGNER <br> WHO KEEPS LEARNING TO</span> -->
+                        <span class="hero__heading--concept">
+                            Designer, understanding
+                        </span>
+                        <span class="hero__heading--keywords">
+                            herself, design, development, people, and more.
+                        </span>
+                    </div>
+                </h1>
+                <a href="#" class="btn--edge btn--edge--bottom-right btn--edge--f-bw">
+                    <p>open resume</p>
+                </a>
+                <div class="hero-slider hero-slider--main">
+                    <div class="hero-slider__img hero-slider__img--01"></div>
+                    <div class="hero-slider__img hero-slider__img--02"></div>
                 </div>
-            </h1>
-            <a href="#" class="btn--edge btn--edge--bottom-right btn--edge--f-bw">
-                <p>open resume</p>
-            </a>
-            <span class="index-scroll">
-                <span class="index-scroll__arrow"></span>
-                Scroll
-            </span>
-        </div>
-
-        <nav class="secondary-nav">
-            <div class="secondary-nav-container">
-                <ul class="secondary-nav__list">
-                    <li class="secondary-nav__item">
-                        <a href="#myself-paths" id="myself-paths-link" class="secondary-nav__link">PATHS</a>
-                    </li>
-                    <li class="secondary-nav__item">
-                        <a href="#myself-skills" id="myself-skills-link" class="secondary-nav__link">SKILLS</a>
-                    </li>
-                    <li class="secondary-nav__item">
-                        <a href="#myself-goals" id="myself-goals-link" class="secondary-nav__link">GOALS</a>
-                    </li>
-                </ul>
+                <span class="index-scroll">
+                    <span class="index-scroll__arrow"></span>
+                    Scroll
+                </span>
             </div>
-        </nav>
-
-        <!-- My Path -->
-        <section id="myself-paths" class="anchored-section myself-section section section__myself " data-matching-link="#myself-paths-link">
-            <div class="path-container">
-                <div class="section__container--full">
+            <section class="section section__myself">
+                <div class="section__container">
                     <header class="section__header">
-                        <div class="section__eyebrow">SCHOOL YEARS</div>
-                        <h2 class="section__heading">A Girl under her family's expectation</h2>
-                        <div class="section__paragraph">
-                            We work in the space where brands and technology meet. Where brands willing to create something
-                            unique and
-                            exciting
-                            can
-                            explore endless ways to connect with consumers.
-                        </div>
-                        <div class="section__paragraph">
-                            We work in the space where brands and technology meet. Where brands willing to create something
-                            unique and
-                            exciting
-                            can
-                            explore endless ways to connect with consumers.
-                        </div>
-                    </header>
-                </div>
-                <div class="section__img-container">
-                    <!-- <img class="section__img" src="./assets/images/hero_04.jpg" alt="myself image"> -->
-                    <img class="section__img" src="./assets/images/hero_04.jpg" alt="myself image">
-                    <img class="section__img" src="./assets/images/hero_04.jpg" alt="myself image">
-                </div>
-            </div>
-            <div class="path-container">
-                <div class="section__container--full">
-                    <header class="section__header section__header--to-right">
-                        <div class="section__eyebrow">SCHOOL DAYS</div>
-                        <h2 class="section__heading">A Girl under her family's expectation</h2>
-                        <div class="section__paragraph">
-                            We work in the space where brands and technology meet. Where brands willing to create something
-                            unique and
-                            exciting
-                            can
-                            explore endless ways to connect with consumers.
-                        </div>
+                        <div class="section__eyebrow">HERSELF</div>
+                        <h2 class="section__heading">Revived as a designer.</h2>
                         <div class="section__paragraph">
                             We work in the space where brands and technology meet. Where brands willing to create something
                             unique and
@@ -136,322 +86,267 @@
                             explore endless ways to connect with consumers.
                         </div>
                     </header>
-                </div>
-                <div class="section__img-container">
-                    <!-- <img class="section__img" src="./assets/images/hero_04.jpg" alt="myself image"> -->
-                    <img class="section__img" src="./assets/images/hero_04.jpg" alt="myself image">
-                    <img class="section__img" src="./assets/images/hero_04.jpg" alt="myself image">
-                </div>
-            </div>
-        </section>
-
-        <!-- My Skills -->
-        <section id="myself-skills" class="anchored-section myself-section section section__design" data-matching-link="#myself-skills-link">
-            <!-- (1) tool sets-->
-            <div class="section__container--full ph-small project__subtitle--ac">
-                <div class="section__eyebrow">TECHNICAL SKILLS</div>
-                <h2 class="section__heading">What can I do for you?</h2>
-                <div class="row row--gutters project__box bg--w">
-                    <div class="col--m-6">
-                        <div class="iconbox">
-                            <div class="iconbox__icon">
-                                <img src="./assets/images/i-planning.svg" alt="photoshop logo">
-                            </div>
-                            <h3 class="iconbox__heading">
-                                UX Planning
-                            </h3>
-                            <p class="iconbox__desc">
-                                User Experience should come first in all digital product development.
-                                Using data earned from quantitative & qualitative research, I set up
-                                a user-centered goal and develop content strategy and information architecture.
-                            </p>
+                    <div class="section__side section__side--left-padding">
+                        <div class="section__side-container">
+                            <img class="img1" src="./assets/images/hero_04.jpg" alt="myself image">
+                            <img class="img2" src="./assets/images/hero_01.jpg" alt="myself image">
                         </div>
                     </div>
-                    <div class="col--m-6">
-                        <div class="iconbox">
-                            <div class="iconbox__icon">
-                                <img src="./assets/images/i-planning.svg" alt="photoshop logo">
-                            </div>
-                            <h3 class="iconbox__heading">
-                                UI Design
-                            </h3>
-                            <p class="iconbox__desc">
-                                With design system in mind, I try to design persuasive, easy-to-understand UI,
-                                and make sure it has a enjoyable rhythm with balanced layout & high legibility of typography.
-                                I get inspiration from all kinds of designs around me.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col--m-6">
-                        <div class="iconbox">
-                            <div class="iconbox__icon">
-                                <img src="./assets/images/i-planning.svg" alt="photoshop logo">
-                            </div>
-                            <h3 class="iconbox__heading">
-                                Website & Web app development
-                            </h3>
-                            <p class="iconbox__desc">
-                                I love using it at the first stage of testing overall UI.
-                                Also for photo retouching, promotion design, and deliverables.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col--m-6">
-                        <div class="iconbox">
-                            <div class="iconbox__icon">
-                                <img src="./assets/images/i-planning.svg" alt="photoshop logo">
-                            </div>
-                            <h3 class="iconbox__heading">
-                                Branding Design for Small Businesses
-                            </h3>
-                            <p class="iconbox__desc">
-                                I love using it at the first stage of testing overall UI.
-                                Also for photo retouching, promotion design, and deliverables.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- (2) tool sets-->
-            <section class="section__container--full ph-small">
-                <div class="row row--gutters project__col--flip-order">
-                    <div class="col--m-6 project__col--flip-order--first">
-                        <div class="section__eyebrow">TOOL SET</div>
-                        <h2 class="section__heading">Feeling cool with tools</h2>
-                        <p class="p--desc p--desc--mb project__img--desc">We went through 3 iterations to decide what
-                            kind of product to develop. This process
-                            included</p>
-                        <p class="p--desc p--desc--mb project__img--desc">We went through 3 iterations to decide what
-                            kind of product to develop. This process We went through 3 iterations to decide what
-                            kind of product to develop. This process included</p>
-                    </div>
-                    <div class="col--m-6">
-                        <figure class="circles">
-                            <div class="circles__center">
-                                <div class="circles__item circles__item--learning">
-                                    KEEP<br>LEARNING
-                                </div>
-
-                                <div class="circles__item circles__item--photoshop">
-                                    <img class="circles__img" src="./assets/images/i-photoshop.svg" alt="photoshop logo">
-                                </div>
-
-                                <div class="circles__item circles__item--illustrator">
-                                    <img class="circles__img" src="./assets/images/i-illustrator.svg" alt="illustrator logo">
-                                </div>
-
-                                <div class="circles__item circles__item--sketch">
-                                    <img class="circles__img" src="./assets/images/i-sketch.svg" alt="sketch logo">
-                                </div>
-
-                                <div class="circles__item circles__item--vsc">
-                                    <img class="circles__img" src="./assets/images/i-visual-studio-code.svg" alt="visual studio code logo">
-                                </div>
-
-                                <div class="circles__item circles__item--github">
-                                    <img class="circles__img" src="./assets/images/i-github.svg" alt="Github logo">
-                                </div>
-
-                                <div class="circles__item circles__item--marvel">
-                                    <img class="circles__img" src="./assets/images/i-marvel.svg" alt="marvel logo">
-                                </div>
-                            </div>
-                        </figure>
+                    <div class="section__cta">
+                        <a class="btn btn--underline" href="#">See her story</a>
                     </div>
                 </div>
             </section>
-            <!-- (3) also powered with -->
-            <section class="section section__container--full ph-small">
-                <header class="row project__subtitle--ac">
-                    <div class="section__eyebrow">SOFT SKILLS</div>
-                    <h2 class="section__heading">Other strengths good to have</h2>
-                </header>
-                <div class="container--centered-desc">
-                    <p class="p--desc mb-20">We wanted users to feel cared and empowered so that they can think emotions are
-                        something to be taken care of, not
-                        negative things to avoid or hide inside.</p>
-                </div>
-                <div class="row row--gutters">
-                    <ul class="col-2-by-2">
-                        <li class="numberbox">
-                            <div class="numberbox__number">1</div>
-                            <div class="numberbox__content">
-                                <h3 class="numberbox__heading">
-                                    Stress checker
-                                </h3>
-                                <p class="numberbox__desc">
-                                    Check their stress level regularly.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="numberbox">
-                            <div class="numberbox__number">2</div>
-                            <div class="numberbox__content">
-                                <h3 class="numberbox__heading">
-                                    Stress checker
-                                </h3>
-                                <p class="numberbox__desc">
-                                    Check their stress level regularly.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="numberbox">
-                            <div class="numberbox__number">3</div>
-                            <div class="numberbox__content">
-                                <h3 class="numberbox__heading">
-                                    Stress checker
-                                </h3>
-                                <p class="numberbox__desc">
-                                    Check their stress level regularly.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="numberbox">
-                            <div class="numberbox__number">4</div>
-                            <div class="numberbox__content">
-                                <h3 class="numberbox__heading">
-                                    Stress checker
-                                </h3>
-                                <p class="numberbox__desc">
-                                    Check their stress level regularly.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </section>
-
-        <!-- My Goals -->
-        <section id="myself-goals" class="anchored-section myself-section section--development" data-matching-link="#myself-goals-link">
-            <div class="section__container--full mt-none mb-100 ph-small">
-                <div class="row row--gutters project__box bg--w project__col--flip-order">
-                    <div class="col--m-6">
-                        <div class="section__illust section__illust--center">
-                            <div class="illust__container is-in-view illust__container--height">
-                                <figure class="illust__circle illust__circle--b-left">Education</figure>
-                                <figure class="illust__circle illust__circle--t-center">Small Business</figure>
-                                <figure class="illust__circle illust__circle--b-right">Culture</figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col--m-6 project__col--flip-order--first">
-                        <div class="section__eyebrow">DREAMER</div>
+            <section class="section section__design">
+                <div class="section__container">
+                    <header class="section__header">
+                        <div class="section__eyebrow">DESIGN</div>
                         <h2 class="section__heading">Believe in Power of UX Design.</h2>
                         <div class="section__paragraph">
                             We work in the space where brands and technology meet. Where brands willing to create something
-                            unique and We work in the space where brands and technology meet.
+                            unique and
                             exciting can explore endless ways to connect with consumers.
                         </div>
+                        <div class="section__illust">
+                            <div class="illust__container is-in-view">
+                                <figure class="illust__circle illust__circle--left">Client's Needs</figure>
+                                <figure class="illust__circle illust__circle--center">Design Thinking</figure>
+        
+                                <figure class="illust__circle illust__circle--right">Users' Needs</figure>
+        
+                            </div>
+                        </div>
+                    </header>
+                    <div class="section__side section__side--right-padding">
+                        <h3 class="section__eyebrow section__eyebrow--bw1">FEATURED WORKS</h3>
+                        <div class="cards">
+                            <a href="#" class="cards__card">
+                                <div class="card__img-container">
+                                    <img src="./assets/images/hero_03.jpg" alt="design work" class="card__img">
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <h4 class="card__title--main">Ma-in</h4>
+                                            <p class="card__title--sub">How to improve people's mindfulness?</p>
+                                        </div>
+                                        <span class="card__meta">Mobile App</span>
+                                    </div>
+                                    <a class="card__view" href="#">view</a>
+                                </div>
+                            </a>
+                            <a href="#" class="cards__card">
+                                <div class="card__img-container">
+                                    <img src="./assets/images/hero_03.jpg" alt="design work" class="card__img">
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <h4 class="card__title--main">Ma-in</h4>
+                                            <p class="card__title--sub">How to improve people's mindfulness?</p>
+                                        </div>
+                                        <span class="card__meta">Mobile App</span>
+                                    </div>
+                                    <a class="card__view" href="#">view</a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section__cta">
+                        <a class="btn btn--underline" href="#">Explore All Design Works</a>
+                    </div>
+                </div>
+            </section>
+        
+            <div class="section__banner-container">
+                <div class="section__container">
+                    <div class="section__banner">
+                        <p class="section__banner-eyebrow">If you are looking for</p>
+                        <p class="section__banner-copy">
+                            a designer who understands development process?
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer class="site-footer">
-        <div class="container">
-            <div class="site-footer__content">
-                <h2 class="site-footer__title">Let's make our users smile.</h2>
-                <a href="#" class="btn--edge btn--edge--top-right">
-                    <p>open resume</p>
-                </a>
-                <div class="site-footer__inner-container">
-                    <div class="site-footer__site-map">
-                        <ul class="site-map">
-                            <li><a class="site-map__link" href="#">herself</a></li>
-                            <li><a class="site-map__link" href="#">design</a></li>
-                            <li><a class="site-map__link" href="#">development</a></li>
-                        </ul>
+        
+            <section class="section section--development">
+                <div class="section__container">
+                    <header class="section__header">
+                        <div class="section__eyebrow">DEVELOPMENT</div>
+                        <h2 class="section__heading">Thanks to learning development, I've got a broader view.</h2>
+                        <div class="section__paragraph">
+                            We work in the space where brands and technology meet. Where brands willing to create something
+                            unique
+                            and
+                            exciting can explore endless ways to connect with consumers.
+                        </div>
+                        <div class="section__illust">
+                            <div class="illust__container is-in-view">
+                                <figure class="illust__circle illust__circle--big">
+                                    <span class="illust__circle-inner illust__circle-inner--title1">Front-end</span>
+                                    <span class="illust__circle-inner illust__circle-inner--item2">CSS</span>
+                                    <span class="illust__circle-inner illust__circle-inner--item3">JS</span>
+                                    <span class="illust__circle-inner illust__circle-inner--item1">HTML</span>
+                                </figure>
+                                <figure class="illust__circle illust__circle--medium">
+                                    <span class="illust__circle-inner illust__circle-inner--title2">Back-end</span>
+                                    <span class="illust__circle-inner illust__circle-inner--item4">Express JS</span>
+                                    <span class="illust__circle-inner illust__circle-inner--item5">Mongo DB</span>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="section__paragraph">
+                            We work in the space where brands and technology meet. Where brands willing to create something
+                            unique
+                            and
+                            exciting can explore endless ways to connect with consumers.
+                        </div>
+                    </header>
+                    <div class="section__side section__side--right-padding">
+                        <h3 class="section__eyebrow section__eyebrow--bw1">FEATURED WORKS</h3>
+                        <div class="cards">
+                            <a href="#" class="cards__card">
+                                <div class="card__img-container">
+                                    <img src="./assets/images/hero_03.jpg" alt="design work" class="card__img">
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <h4 class="card__title--main">Ma-in</h4>
+                                            <p class="card__title--sub">How to improve people's mindfulness?</p>
+                                        </div>
+                                        <span class="card__meta">Mobile App</span>
+                                    </div>
+                                    <a class="card__view" href="#">view</a>
+                                </div>
+                            </a>
+                            <a href="#" class="cards__card">
+                                <div class="card__img-container">
+                                    <img src="./assets/images/hero_03.jpg" alt="design work" class="card__img">
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="card__info">
+                                        <div class="card__title">
+                                            <h4 class="card__title--main">Ma-in</h4>
+                                            <p class="card__title--sub">How to improve people's mindfulness?</p>
+                                        </div>
+                                        <span class="card__meta">Mobile App</span>
+                                    </div>
+                                    <a class="card__view" href="#">view</a>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="site-footer__contact">
-                        <p class="site-footer__contact-email">wonmidesign@gmail.com</p>
-                        <p class="site-footer__contact-status">hirable / freelancing</p>
-                        <!-- <ul class="site-footer__contact-social">
-                                        <li>Pinterest</li>
-                                        <li>Twitter</li>
-                                        <li>Instagram</li>
-                                    </ul> -->
+                    <div class="section__cta">
+                        <a class="btn btn--underline" href="#">See All Dev Exercises</a>
+                    </div>
+            </section>
+        </main>
+        
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer__content">
+                    <h2 class="site-footer__title">Let's make our users smile.</h2>
+                    <a href="#" class="btn--edge btn--edge--top-right">
+                        <p>open resume</p>
+                    </a>
+                    <div class="site-footer__inner-container">
+                        <div class="site-footer__site-map">
+                            <ul class="site-map">
+                                <li><a class="site-map__link" href="#">herself</a></li>
+                                <li><a class="site-map__link" href="#">design</a></li>
+                                <li><a class="site-map__link" href="#">development</a></li>
+                            </ul>
+                        </div>
+                        <div class="site-footer__contact">
+                            <p class="site-footer__contact-email">wonmidesign@gmail.com</p>
+                            <p class="site-footer__contact-status">hirable / freelancing</p>
+                            <!-- <ul class="site-footer__contact-social">
+                                    <li>Pinterest</li>
+                                    <li>Twitter</li>
+                                    <li>Instagram</li>
+                                </ul> -->
+                        </div>
+                    </div>
+                    <div class="site-footer__copyright">
+                        <p>Designed & built by Wonmi Kwon with passion and love. <br> 2019 Wonmi Kwon. All copyrights are
+                            reserved.</p>
                     </div>
                 </div>
-                <div class="site-footer__copyright">
-                    <p>Designed & built by Wonmi Kwon with passion and love. <br> 2019 Wonmi Kwon. All copyrights are
-                        reserved.</p>
+            </div>
+        </footer>
+        
+        <div class="overlay-nav">
+            <div class="container--extended overlay-nav__container">
+                <div class="overlay-nav__close-icon icon__close">
+                    <div class="icon__close--center"></div>
+                </div>
+                <div class="overlay-nav__content">
+                    <div class="overlay-nav__head">
+                        <div class="overlay-nav__logo">
+                            <img src="./assets/images/icons/logo-emblem--bl.svg" alt="logo emblem" class="logo-emblem">
+                        </div>
+                        <p class="overlay-nav__copywords">
+                            a UX/UI designer, who keeps learning to <span class="overlay-nav__keyword">understand</span>
+                        </p>
+                    </div>
+                    <ul class="overlay-nav__list">
+                        <li class="overlay-nav__item">
+                            <a href="#" class="overlay-nav__link">herself</a>
+                        </li>
+                        <li class="overlay-nav__item">
+                            <a href="#" class="overlay-nav__link">design</a>
+                        </li>
+                        <li class="overlay-nav__item">
+                            <a href="#" class="overlay-nav__link">development</a>
+                        </li>
+                    </ul>
+                    <div class="overlay-nav__bottom">
+                        <div class="overlay-nav__cta">
+                            <a href="#" class="btn--plain">Work Inquiry</a>
+                        </div>
+                        <div class="overlay-nav__contact">
+                            <p>wonmi.design@gmail.com</p>
+                            <div class="sns-container">
+                                <a href="#" class="sns-item">LinkedIn</a>
+                                <a href="#" class="sns-item">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
-    
-    <div class="overlay-nav">
-        <div class="container--extended overlay-nav__container">
-            <div class="overlay-nav__close-icon icon__close">
-                <div class="icon__close--center"></div>
-            </div>
-            <div class="overlay-nav__content">
-                <div class="overlay-nav__head">
-                    <div class="overlay-nav__logo">
-                        <img src="./assets/images/icons/logo-emblem--bl.svg" alt="logo emblem" class="logo-emblem">
+        <div class="site-header site-header--dynamic">
+            <div class="container container--dynamic-header">
+                <div class="site-header__content site-header__content--dynamic">
+                    <div class="site-header__logo">
+                        <div class="site-header__logo-text site-header__logo-text--black">wonmi</div>
+                        <div class="site-header__logo-emblem-container">
+                            <img src="./assets/images/icons/logo-emblem--bl.svg" alt="logo emblem" class="logo-emblem">
+                        </div>
                     </div>
-                    <p class="overlay-nav__copywords">
-                        a UX/UI designer, who keeps learning to <span class="overlay-nav__keyword">understand</span>
-                    </p>
-                </div>
-                <ul class="overlay-nav__list">
-                    <li class="overlay-nav__item">
-                        <a href="#" class="overlay-nav__link">herself</a>
-                    </li>
-                    <li class="overlay-nav__item">
-                        <a href="#" class="overlay-nav__link">design</a>
-                    </li>
-                    <li class="overlay-nav__item">
-                        <a href="#" class="overlay-nav__link">development</a>
-                    </li>
-                </ul>
-                <div class="overlay-nav__bottom">
-                    <div class="overlay-nav__cta">
-                        <a href="#" class="btn--plain">Work Inquiry</a>
-                    </div>
-                    <div class="overlay-nav__contact">
-                        <p>wonmi.design@gmail.com</p>
-                        <div class="sns-container">
-                            <a href="#" class="sns-item">LinkedIn</a>
-                            <a href="#" class="sns-item">Twitter</a>
+                    <div class="site-header__menu-content">
+                        <nav class="primary-nav">
+                            <ul class="primary-nav__list">
+                                <li class="primary-nav__item">
+                                    <a href="#">myself</a>
+                                </li>
+                                <li class="primary-nav__item active">
+                                    <a href="#">design</a>
+                                </li>
+                                <li class="primary-nav__item">
+                                    <a href="#">development</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="hamburger hamburger--black">
+                            <div class="hamburger--center"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="site-header site-header--dynamic">
-        <div class="container container--dynamic-header">
-            <div class="site-header__content site-header__content--dynamic">
-                <div class="site-header__logo">
-                    <div class="site-header__logo-text site-header__logo-text--black">wonmi</div>
-                    <div class="site-header__logo-emblem-container">
-                        <img src="./assets/images/icons/logo-emblem--bl.svg" alt="logo emblem" class="logo-emblem">
-                    </div>
-                </div>
-                <div class="site-header__menu-content">
-                    <nav class="primary-nav">
-                        <ul class="primary-nav__list">
-                            <li class="primary-nav__item">
-                                <a href="#">myself</a>
-                            </li>
-                            <li class="primary-nav__item active">
-                                <a href="#">design</a>
-                            </li>
-                            <li class="primary-nav__item">
-                                <a href="#">development</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="hamburger hamburger--black">
-                        <div class="hamburger--center"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="./temp/scripts/App.js"></script>
+<script src="./temp/scripts/App.js"></script>
 </body>
-
 </html>
