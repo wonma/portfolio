@@ -213,7 +213,7 @@ video {
             letter-spacing: -1.5px;
             font-weight: 700;
             color: $primaryCol;
-            width: 300px;
+            width: 340px;
             line-height: 1.1;
 
             @mixin atSmall {
@@ -229,10 +229,10 @@ video {
             margin-top: 40px;
             font-size: 18px;
             font-weight: 400;
-                    letter-spacing: 0px; 
-        word-spacing: 1.6px;
+            letter-spacing: 0px; 
+            word-spacing: 1.6px;
             line-height: 1.6;
-            max-width: 500px;
+            max-width: 380px;
             opacity: .8;
             color: #080808;
         }
