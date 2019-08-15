@@ -29,6 +29,28 @@
     }
 
     &__desc {
+        font-size: 18px;
+    }
+}
 
+.iconbox { 
+    padding: 35px;
+    border: 1px solid rgb(234, 234, 234);
+    text-align: left;
+    font-weight: 400;
+
+    &__icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 35px;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        color: $grey-font-dark;
+        line-height: 1.9;
     }
 }

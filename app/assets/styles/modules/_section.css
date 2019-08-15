@@ -49,8 +49,8 @@
         display: flex;
         flex-direction: column;
         max-width: 960px;
-        margin: 60px auto; 
-        overflow: hidden; 
+        margin: 120px auto; 
+        /* overflow: hidden;  */
     }
 
     &__img {
@@ -87,6 +87,14 @@
         @mixin atMedium {
             width: 600px;
         }
+
+        &--center{
+            /* border: 1px solid sandybrown; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+        }
     }
 
     &__myself {
@@ -99,6 +107,10 @@
         padding: 0 32px;
         max-width: 700px;
         /* border: 1px solid blue; */
+        &--to-right {
+            margin-left: auto;
+            margin-right: 0;
+        }
     }
 
     &__side {   /* wrapper A-level */
@@ -188,10 +200,11 @@
         margin-bottom: 30px;
         transform: translateY(10px);
         font-size: 32px;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 1.4;
         letter-spacing: -.5px;
         transform: translateX(-2px); /* aligned to the left */
+        color: #222d39;
 
         @mixin atSmall {
             font-size: 32px;
