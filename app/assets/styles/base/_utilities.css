@@ -90,3 +90,7 @@ div#page {
     visibility: hidden;
     opacity: 0;
 }
+
+.page-design {
+    position: relative;
+}
