@@ -232,9 +232,13 @@ video {
             letter-spacing: 0px; 
             word-spacing: 1.6px;
             line-height: 1.6;
-            max-width: 380px;
+            max-width: 280px;
             opacity: .8;
             color: #080808;
+            
+            @mixin atSmall {
+                max-width: 320px;
+            }
         }
 
     }
