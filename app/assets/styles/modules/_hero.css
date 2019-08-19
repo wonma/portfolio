@@ -141,7 +141,7 @@ video {
 
         .page-work--1 & {
             /* background: rgba(59, 62, 83, .5); */
-            background: rgba(39, 40, 42, .3);
+            background: rgba(39, 40, 42, .2);
         }
     }
 
@@ -210,12 +210,14 @@ video {
         &--main {
             margin-top: 20px;
             font-size: 50px;
-            letter-spacing: -1.5px;
+            letter-spacing: .5px;
             font-weight: 700;
             color: $primaryCol;
             width: 340px;
             line-height: 1.1;
-
+            &--light {
+                color: #fff;
+            }
             @mixin atSmall {
                 font-family: aktiv-grotesk, Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Arial, Noto Sans, sans-serif;
                 width: 100%;
@@ -233,9 +235,13 @@ video {
             word-spacing: 1.6px;
             line-height: 1.6;
             max-width: 280px;
-            opacity: .8;
+            opacity: .9;
             color: #080808;
-            
+
+            &--light {
+                color: #fff;
+            }
+
             @mixin atSmall {
                 max-width: 320px;
             }
@@ -304,6 +310,18 @@ video {
                 background-image: url('../../assets/images/img_woman.jpg');
             }
         }
+    }
+
+    &__tag {
+        &-container {
+            display: flex;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 32px;
+        }
+        margin-right: 8px;
+        color: rgba(255, 255, 255, 1);
     }
 
 }

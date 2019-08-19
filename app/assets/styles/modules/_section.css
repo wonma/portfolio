@@ -50,6 +50,7 @@
         flex-direction: column;
         max-width: 960px;
         margin: 120px auto; 
+        padding: 0 32px;
         /* overflow: hidden;  */
     }
 

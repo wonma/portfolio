@@ -60,7 +60,7 @@
         /* display: none; */
         margin-left: auto;
         position: relative;
-        padding-right: 20px;
+        padding-right: 16px;
         color: rgba(255, 255, 255, .6);
         letter-spacing: .6px;
 
@@ -88,7 +88,7 @@
     position: fixed;
     height: 60px;
     top: -90px;
-    z-index: 110;
+    z-index: 160;
     /* border: 1px solid orchid; */
     border-bottom: 1px solid #F1F2F6;
 }
